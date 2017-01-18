@@ -1,0 +1,23 @@
+//公共样式
+body,h1,h2,h3,h4,h5,h6,p,form{
+    margin: 0px;
+}
+body{
+    font: 14px/22px "Microsoft Yahei",Helvetica,Arial,STXihei,SimSun,sans-serif;
+    color: #3E3E3E;
+}
+
+
+//主体颜色
+$mincolor:#EC3E7D;
+ul{list-style: none;}
+a{text-decoration: none;}
+//内容宽度
+.page-rs{width: 1200px;margin: 0px auto;}
+//清除浮动
+.clear{zoom: 1;}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
