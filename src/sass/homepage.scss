@@ -140,6 +140,7 @@
                     cursor: pointer;
                     text-shadow: none;
                     padding: 0px;
+                    outline: none;
                 }
                 .hot-keywords{
                     width: 500px;
@@ -577,13 +578,13 @@
     .floor_location{
         position: fixed;
         left: -43.5px;
-        top: 40px;
+        top: 30%;
         z-index: 1000;
 //      display: block;
         display: none;
         text-align: center;
         li{
-            padding: 5px;
+            padding: 10px;
             background: none repeat scroll 0% 0% #FFF;
             font-size: 11px;
             text-align: center;
@@ -604,6 +605,7 @@
                 }
             }
         }
+        li:hover{background: $mincolor;}
     
     }     
     //左边锚链接结束        
@@ -982,6 +984,7 @@
                                     font-size: 16px;
                                     letter-spacing:1px;// 定义文本中字母的间距(中文为文字的间距) 
                                 }
+                                .sasa_limit_btn:hover{background: #c53265;}
                             }
                         }
                     }

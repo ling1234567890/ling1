@@ -18,6 +18,10 @@ body {
   color: #3E3E3E;
 }
 
+.clb {
+  clear: both;
+}
+
 ul {
   list-style: none;
 }
@@ -260,6 +264,7 @@ a {
   cursor: pointer;
   text-shadow: none;
   padding: 0px;
+  outline: none;
 }
 
 .index-page .header-main .page-rs .search .hot-keywords {
@@ -932,14 +937,14 @@ a {
 .index-page .floor_location {
   position: fixed;
   left: -43.5px;
-  top: 40px;
+  top: 30%;
   z-index: 1000;
   display: none;
   text-align: center;
 }
 
 .index-page .floor_location li {
-  padding: 5px;
+  padding: 10px;
   background: none repeat scroll 0% 0% #FFF;
   font-size: 11px;
   text-align: center;
@@ -971,6 +976,10 @@ a {
   font-size: 16px;
   display: block;
   margin: 0px auto;
+}
+
+.index-page .floor_location li:hover {
+  background: #EC3E7D;
 }
 
 .index-page .sasa_promise {
@@ -1462,6 +1471,10 @@ a {
   color: #fff;
   font-size: 16px;
   letter-spacing: 1px;
+}
+
+.index-page .sasa_limit_head_container .sasa_limit_head_container .sasa_limit a .sasa_limit_item .sasa_limit_info .sasa_limit_bottom .sasa_limit_btn:hover {
+  background: #c53265;
 }
 
 .index-page .sasa_limit_head_container .limi_lg_more {

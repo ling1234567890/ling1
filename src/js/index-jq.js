@@ -54,7 +54,7 @@ $(function(){
 //		console.log(hour.jquery)
 		// 设置开始购买的时间  每天的09：00
 		// var endDate = new Date('2016/12/12')
-		var end = Date.parse('2017/2/2/09:00');
+		var end = Date.parse('2017/2/20/09:00');
 		var count_down_timer = setInterval(function(){
 				var now = Date.now();
 

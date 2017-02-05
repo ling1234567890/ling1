@@ -1,0 +1,341 @@
+[
+	{
+		"man_img":"img-list/list001.jpg",
+		"guojia":"韩国品牌",
+		"guoqi":"img-list/hanguoimg.png",
+		"current_price":"￥68.0",
+		"original_price":"￥170.0",
+		"discount":"4折",
+		"direct_sending":"[保税仓直送]",
+		"zimu":"SNP",
+		"name":"精华面膜系列        金丝燕窝深层保湿面膜 ",
+		"count":"10片",
+		"Sold_Out":"已售27件"
+		
+	},
+	{
+		"man_img":"img-list/list002.jpg",
+		"guojia":"韩国品牌",
+		"guoqi":"img-list/hanguoimg.png",
+		"current_price":"￥85.0",
+		"original_price":"￥149.0",
+		"discount":"5.7折",
+		"direct_sending":"[保税仓直送]",
+		"zimu":"PAPA RECIPE",
+		"name":"面膜系列   春雨蜂蜜面膜  ",
+		"count":"10片",
+		"Sold_Out":"已售16件"
+	},
+	{
+		"man_img":"img-list/list003.jpg",
+		"guojia":"韩国品牌",
+		"guoqi":"img-list/hanguoimg.png",
+		"current_price":"￥1049.0",
+		"original_price":"￥1800.0",
+		"discount":"5.8折",
+		"direct_sending":"",
+		"zimu":"SK-II",
+		"name":"护肤精华露(神仙水)  ",
+		"count":"330毫升",
+		"Sold_Out":"已售2件"
+	},
+	{
+		"man_img":"img-list/list004.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥89.0",
+		"original_price":"￥185.0",
+		"discount":"4.8折",
+		"direct_sending":"[保税仓直送]",
+		"zimu":"雅漾",
+		"name":"舒护活泉喷雾  ",
+		"count":"300毫升",
+		"Sold_Out":"已售13件"
+		
+	},
+	{
+		"man_img":"img-list/list005.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥199.0",
+		"original_price":"￥615.0",
+		"discount":"3.2折",
+		"direct_sending":"",
+		"zimu":"伊丽莎白 · 雅顿",
+		"name":"金致系列   金致眼部胶囊精华液  ",
+		"count":"60粒",
+		"Sold_Out":"已售11件"
+	},
+	{
+		"man_img":"img-list/list006.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥179.0",
+		"original_price":"￥295.0",
+		"discount":"6.1折",
+		"direct_sending":"",
+		"zimu":"倩碧",
+		"name":"护肤三部曲   卓越润肤乳(天才黄油+) ",
+		"count":"125毫升",
+		"Sold_Out":"已售6件"
+	},
+	{
+		"man_img":"img-list/list007.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥286.0",
+		"original_price":"￥610.0",
+		"discount":"4.7折",
+		"direct_sending":"",
+		"zimu":"伊丽莎白 · 雅顿",
+		"name":"时空系列   金装时空修护胶囊  ",
+		"count":"60粒",
+		"Sold_Out":"已售19件"
+		
+	},
+	{
+		"man_img":"img-list/list008.jpg",
+		"guojia":"日本品牌",
+		"guoqi":"img-list/ribenimg.png",
+		"current_price":"￥799.0",
+		"original_price":"￥1365.0",
+		"discount":"5.9折",
+		"direct_sending":"",
+		"zimu":"SK-II",
+		"name":"护肤精华露(神仙水)   ",
+		"count":"250毫升",
+		"Sold_Out":"已售6件"
+	},
+	{
+		"man_img":"img-list/list009.jpg",
+		"guojia":"日本品牌",
+		"guoqi":"img-list/ribenimg.png",
+		"current_price":"￥115.0",
+		"original_price":"￥248.0",
+		"discount":"4.6折",
+		"direct_sending":"",
+		"zimu":"SK-II",
+		"name":"护肤精华露(神仙水) 小样 ",
+		"count":"30毫升",
+		"Sold_Out":"已售7件"
+	},
+	{
+		"man_img":"img-list/list010.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥163.0",
+		"original_price":"￥1018.0",
+		"discount":"1.6折",
+		"direct_sending":"",
+		"zimu":"MVSK",
+		"name":"黄金羊胎素再生精华   ",
+		"count":"5毫升x4支  ",
+		"Sold_Out":"已售8件"
+		
+	},
+	{
+		"man_img":"img-list/list011.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥119.0",
+		"original_price":"￥228.0",
+		"discount":"5.2折",
+		"direct_sending":"[保税仓直送]",
+		"zimu":"贝德玛",
+		"name":"舒妍修护系列   舒妍多效洁肤液  ",
+		"count":"500毫升",
+		"Sold_Out":"已售7件"
+	},
+	{
+		"man_img":"img-list/list012.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥928.0",
+		"original_price":"￥2180.0",
+		"discount":"4.3折",
+		"direct_sending":"",
+		"zimu":"兰蔻",
+		"name":"小黑瓶精华肌底液 升级版 ",
+		"count":"100毫升",
+		"Sold_Out":"已售1件"
+	},
+	{
+		"man_img":"img-list/list013.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥175.0",
+		"original_price":"￥320.0",
+		"discount":"5.5折",
+		"direct_sending":"[保税仓直送]",
+		"zimu":"兰蔻",
+		"name":"清滢柔肤水(粉水)    ",
+		"count":"200毫升",
+		"Sold_Out":"已售21件"
+		
+	},
+	{
+		"man_img":"img-list/list014.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥359.0",
+		"original_price":"￥490.0",
+		"discount":"7.3折",
+		"direct_sending":"[保税仓直送]",
+		"zimu":"雅诗兰黛",
+		"name":"ANR修护系列   肌透修护眼部精华霜(小棕瓶眼霜) 2014版   ",
+		"count":"15毫升",
+		"Sold_Out":"已售7件"
+	},
+	{
+		"man_img":"img-list/list015.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥379.0",
+		"original_price":"￥605.0",
+		"discount":"6.3折",
+		"direct_sending":"",
+		"zimu":"科颜氏",
+		"name":"牛油果保湿眼霜  ",
+		"count":"28克",
+		"Sold_Out":"已售2件"
+	},
+	{
+		"man_img":"img-list/list016.jpg",
+		"guojia":"韩国品牌",
+		"guoqi":"img-list/hanguoimg.png",
+		"current_price":"￥175.0",
+		"original_price":"￥385.0",
+		"discount":"4.5折",
+		"direct_sending":"[保税仓直送]",
+		"zimu":" Dr. Jart+",
+		"name":"V7多元维他命再生透白系列   V7维生素焕颜亮白霜 ",
+		"count":"50毫升",
+		"Sold_Out":"已售5件"
+		
+	},
+	{
+		"man_img":"img-list/list017.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥899.0",
+		"original_price":"￥162.0",
+		"discount":"5.5折",
+		"direct_sending":"",
+		"zimu":"希思黎",
+		"name":"全能乳液  ",
+		"count":"125毫升",
+		"Sold_Out":"已售2件"
+	},
+	{
+		"man_img":"img-list/list018.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥928.0",
+		"original_price":"￥1900.0",
+		"discount":"4.9折",
+		"direct_sending":"",
+		"zimu":"雅诗兰黛",
+		"name":"ANR修护系列   特润修护肌透精华露(小棕瓶) 第六代   ",
+		"count":"100毫升",
+		"Sold_Out":"已售4件"
+	},
+	{
+		"man_img":"img-list/list019.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥499.0",
+		"original_price":"￥850.0",
+		"discount":"5.9折",
+		"direct_sending":"[保税仓直送]",
+		"zimu":"雅诗兰黛",
+		"name":"ANR修护系列   特润修护肌透精华露(小棕瓶) 第六代  ",
+		"count":"50毫升",
+		"Sold_Out":"已售7件"
+		
+	},
+	{
+		"man_img":"img-list/list020.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥499.0",
+		"original_price":"￥1080.0",
+		"discount":"4.6折",
+		"direct_sending":"[保税仓直送]",
+		"zimu":"兰蔻",
+		"name":"小黑瓶精华肌底液 升级版  ",
+		"count":"50毫升",
+		"Sold_Out":"已售3件"
+	},
+	{
+		"man_img":"img-list/list021.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥850.0",
+		"original_price":"￥1180.0",
+		"discount":"7.3折",
+		"direct_sending":"",
+		"zimu":"赫莲娜",
+		"name":"悦活新生系列   悦活新生精华  ",
+		"count":"75毫升",
+		"Sold_Out":"已售1件"
+	}
+	
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,10 +6,16 @@ body{
     font: 14px/22px "Microsoft Yahei",Helvetica,Arial,STXihei,SimSun,sans-serif;
     color: #3E3E3E;
 }
-
+.clb {
+    clear: both;
+}
 
 //主体颜色
 $mincolor:#EC3E7D;
+
+//列表主体颜色
+$listcolor:#C69A62;
+
 ul{list-style: none;}
 a{text-decoration: none;}
 //内容宽度
