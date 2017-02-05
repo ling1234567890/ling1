@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>详情页</title>
+		<link rel="stylesheet" href="../css/homepage.css">
+		<link rel="stylesheet" href="../css/fase-list.css">
+		<link rel="stylesheet" href="../css/detail-page.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<script src="../js/jquery-3.1.1.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/index-jq.js"></script>
+		<script src="../js/detail-page-jq.js"></script>
+		<script>
+		document.addEventListener('DOMContentLoaded',function(){
+			//图片切换
+			var bigPic = document.getElementsByClassName('small-pic')[0];
+			var smallPic = document.getElementById('ull').getElementsByTagName('img');
+
+			// 鼠标移入改变大图路径
+			// 遍历小图，绑定点击事件
+			for(var i=0;i<smallPic.length;i++){
+				smallPic[i].onmouseover = function(){
+					bigPic.src = this.src;
+
+					// 先去掉所有高亮效果
+					for(var i=0;i<smallPic.length;i++){
+						smallPic[i].parentNode.className = '';
+					};
+
+					this.parentNode.className = 'active';
+				};
+			};
+			
+		});
+	</script>
+	</head>
+
+	<body>
+		
+		<div class="index-page">
+			
+			<!--顶部开始-->
+			<div class="topbar">
+				<div class="page-rs clear">
+					<!--登录注册-->
+					<div class="login-bar">
+						<span id="loginBar" style="display: block;">
+							<span>欢迎光临沙沙网！</span>
+							<a href="#" style="margin-left: 10px;">登录</a>
+							<span class="dividing">或</span>
+							<a href="#">免费注册</a>
+						</span>
+					</div>
+					<!--我的账户-->
+					<div class="member-link">
+						<ul>
+							<li class="noline" id="one_li">
+								<div id="mem">
+									<a href="#" rel="nofollow">
+										<i class="icon-user"></i>
+										我的账户
+										<i class="icon-angle-down"></i>
+									</a>
+								</div>
+								<div id="mem_d1" >
+									<dd><a href="#" rel="nofollow">我的订单</a></dd>
+									<dd><a href="#" rel="nofollow">我的积分</a></dd>
+									<dd><a href="#" rel="nofollow">我的优惠券</a></dd>
+									<dd><a href="#" rel="nofollow">我的收藏</a></dd>
+									<dd><a href="#"rel="nofollow">我的评价</a></dd>
+								</div>
+							</li>
+							<li class="noline">
+								<div id="mini">
+									<div class="js_minicart-title tc">
+    									<a href="#"  class="white">
+    										<i class="icon-shopping-cart"></i>
+    										我的购物车
+    									</a>
+  									</div>
+  									<div class="gwc_div">
+  										<div class="empty">购物车中还没有商品，<br>快去挑选心爱的商品吧</div>
+									</div>
+								</div>
+							</li>
+							<li class="noline">
+								<div class="member white">
+									<a href="#"  class="white">
+										<i class="icon-heart"></i>
+										我的收藏
+									</a>
+								</div>
+							</li>
+							<li class="noline">
+								<a rel="nofollow" href="#" class="white">我的站內信</a>
+							</li>
+							<li class="noline">
+								<a rel="nofollow" href="#" class="white">积分中心</a>
+							</li>
+							<li class="noline">
+								<a rel="nofollow" href="#" class="white">Global site</a>
+							</li>
+							<li class="noline">
+								<div class="member_attention">
+									<a rel="nofollow" href="#" class="white">
+										关于我们
+										<img src="../img/heade-wb.png"  alt="沙沙微博" id="sha_wb"/>
+										<img src="../img/heade-wx.png" alt="沙沙微信" id="sha_wx"/>
+										<div class="heade-wb"><img src="../img/heade_wb.jpg" /> </div>
+										<div class="heade-wx"><img src="../img/heade-wx.jpg" /> </div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--顶部开结束-->
+			
+			<!--header-main开始-->
+			<div class="header-main">
+				<div class="page-rs clear"><br />
+					<!--logo-->
+					<div class="logo"><a href="#"><img src="../img/logo.png" /> </a> </div>
+					<!--搜索框-->
+					<div class="search clear">
+						<form id="searchbar">
+							<div class="search-input">
+								<input type="text"value=""placeholder="雅兰诗黛" class="key"/>
+							</div>
+							<button class="btn-search" type="submit">搜索</button>
+						</form>
+						<div class="hot-keywords">
+							<a href="#">精华</a>
+							<a href="#">保湿</a>
+							<a href="#">面霜</a>
+							<a href="#">眼霜</a>
+							<a href="#">资生堂</a>
+							<a href="#">补水</a>
+							<a href="#">提拉紧致</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--header-main结束-->
+			
+			<!--nav-category开始-->
+			<div class="nav-category">
+				<div class="page-rs clear">
+					<div class="all-category">
+						<div id="cat_550 clear">
+							<div class="sasa_category_head">
+								<div class="sasa_category_icon">
+									<div class="line"></div>
+									<div class="line"></div>
+									<div class="line"></div>
+								</div>
+								全部分类
+							</div>
+							<div class="sasa_category">
+								<ul class="sasa_category_ul">
+									<li class="category_ul_li" id="li_01">
+										<div class="category_li_div clear">
+											<i class="icon-github-alt min"></i>
+			<!--面部护肤-列表页连接-->			<div class="category_title"><a href="html/fase-list.html">面部护肤</a> </div>
+											<i class="icon-angle-right"></i>
+											<!--隐藏列表开始-->
+											<div class="sasa_category_sidebox box01">
+												<div class="categor_haed">
+													<a href="">洁面/磨砂</a>
+												</div>
+												<div class="categor_list box01list01">
+													<a href="">泡沫洁面乳</a>
+                                                    <a href="">洁面摩丝</a>
+                                                    <a href="">洁面啫喱</a>
+                                                    <a href="" class="categor_list_hot">洁面奶</a>
+                                                    <a href="">洁面皂</a>
+                                                    <a href="">洁面粉</a>
+                                                    <a href="">磨砂膏</a>
+                                                    <a href="">磨砂啫喱</a>
+												</div>
+												<div class="categor_haed">
+													<a href="">眼部/唇部/颈部护理</a>
+												</div>
+												<div class="categor_list box01lis02">
+                                                    <a href="" class="categor_list_hot">眼霜</a>
+                                                    <a href="">眼胶</a>
+                                                    <a href="">眼部精化/疗程</a>
+                                                    <a href="">眼膜</a>
+                                                    <a href="">睡眠免洗式眼膜</a>
+                                                    <a href="">润唇膏</a>
+                                                    <a href="">唇部精化</a>
+                                                    <a href="">唇膜</a>
+                                                    <a href="">唇部磨砂</a>
+                                                    <a href="">颈霜</a>
+                                                    <a href="">颈精华</a>
+                                                    <a href="">颈膜</a>
+                                                </div>
+                                                <div class="categor_haed">
+													<a href="">面膜</a>
+												</div>
+												<div class="categor_list box01lis03">
+                                                    <a href="">面膜贴</a>
+                                                    <a href="">水洗式面膜</a>
+                                                    <a href="">睡眠面膜</a>
+                                                    <a href="">面膜粉</a>
+                                                    <a href="">面膜泥</a>
+                                                </div>
+                                                <div class="categor_haed">
+													<a href="">防晒护理</a>
+												</div>
+												<div class="categor_list box01lis04">
+                                                    <a href="">防晒乳液</a>
+                                                    <a href="">防晒啫喱</a>
+                                                    <a href="" class="categor_list_hot">防晒喷雾</a>
+                                                    <a href="">防晒膏</a>
+                                                    <a href="">晒后护理</a>
+                                                    <a href="">晒黑用品</a>
+                                                    <a href="">防晒伞</a>
+                                                </div>
+                                                <div class="categor_haed leftxian">
+													<a href="">暗疮护理</a>
+												</div>
+												<div class="categor_list box01lis05">
+                                                    <a href="">暗疮膏</a>
+                                                    <a href="">暗疮精华</a>
+                                                    <a href="">黑头导出液/膏</a>
+                                                    <a href="">撕拉式鼻贴/鼻膜</a>
+                                                    <a href="">暗疮针</a>
+                                                </div>
+                                                <div class="categor_haed leftxian">
+													<a href="">精华/化妆水</a>
+												</div>
+												<div class="categor_list box01lis05">
+                                                    <a href="">精华液</a>
+                                                    <a href="">精华素/疗程</a>
+                                                    <a href="">柔肤水</a>
+                                                    <a href="" class="categor_list_hot">精华水</a>
+                                                    <a href="">爽肤水</a>
+                                                    <a href="">紧肤水</a>
+                                                    <a href="" class="categor_list_hot">保湿喷雾</a>
+                                                </div>
+                                                <div class="categor_haed leftxian">
+													<a href="">卸妆</a>
+												</div>
+												<div class="categor_list box01lis05">
+                                                    <a href="">卸妆油</a>
+                                                    <a href="">眼/唇专用卸妆液</a>
+                                                    <a href="">卸妆水</a>
+                                                    <a href="">卸妆乳</a>
+                                                    <a href="">卸妆啫喱</a>
+                                                    <a href="">卸妆纸巾</a>
+                                                </div>
+											</div>
+											<!--隐藏列表结束-->
+										</div>										
+									</li>
+									
+									<li class="category_ul_li" id="li_02">
+										<div class="category_li_div clear">
+											<i class="icon-magic min"></i>
+											<div class="category_title"><a href="#">彩妆</a> </div>
+											<i class="icon-angle-right"></i>
+											<!--隐藏列表开始-->
+											<div class="sasa_category_sidebox box02">
+												<div class="categor_haed">
+													<a href="">面部彩妆</a>
+												</div>
+												<div class="categor_list box01lis03">
+                                                    <a href="">隔离霜</a>
+                                                    <a href="">粉底</a>
+                                                    <a href="">遮瑕</a>
+                                                    <a href="">BB霜</a>
+                                                    <a href="">CC霜</a>
+                                                    <a href="">胭脂</a>
+                                                </div>
+                                                <div class="categor_haed">
+													<a href="">眼部彩妆</a>
+												</div>
+												<div class="categor_list box01lis03">
+                                                    <a href="">眉笔/眉粉</a>
+                                                    <a href="">眼影</a>
+                                                    <a href="">眼线</a>
+                                                    <a href="">睫毛膏</a>
+                                                </div>
+                                                <div class="categor_haed">
+													<a href="">其他</a>
+												</div>
+												<div class="categor_list box01lis03">
+                                                    <a href="">美唇</a>
+                                                    <a href="">彩妆盒/套装</a>
+                                                    <a href="">化妆棉</a>
+                                                    <a href="">化妆工具</a>
+                                                    <a href="">美甲</a>
+                                                </div>
+											</div>
+											<!--隐藏列表结束-->
+										</div>
+									</li>
+									<li class="category_ul_li" id="li_03">
+										<div class="category_li_div clear">
+											<i class="icon-beaker min"></i>
+											<div class="category_title"><a href="#">香水</a> </div>
+											<i class="icon-angle-right"></i>
+											<!--隐藏列表开始-->
+											<div class="sasa_category_sidebox box03">
+												<div class="categor_haed">
+													<a href="">香水</a>
+												</div>
+												<div class="categor_list box01lis03">
+                                                    <a href="">女士香水</a>
+                                                    <a href="">男士香水</a>
+                                                    <a href="">香水套装</a>
+                                                    <a href="">香水工具</a>
+                                                </div>
+											</div>
+											<!--隐藏列表结束-->
+										</div>
+									</li>
+									<li class="category_ul_li"id="li_04">
+										<div class="category_li_div clear">
+											<i class="icon-heart-empty min"></i>
+											<div class="category_title"><a href="#">健康肌肤</a> </div>
+											<i class="icon-angle-right"></i>
+											<!--隐藏列表开始-->
+											<div class="sasa_category_sidebox box04">
+												<div class="categor_haed">
+													<a href="">健康肌肤</a>
+												</div>
+												<div class="categor_list box01lis03">
+                                                    <a href="">美容补充品</a>
+                                                    <a href="">保健品</a>
+                                                    <a href="">非处方药</a>
+                                                    <a href="">健康零食</a>
+                                                    <a href="">天然草本茶</a>
+                                                </div>
+											</div>
+											<!--隐藏列表结束-->
+										</div>
+									</li>
+									<li class="category_ul_li"id="li_05">
+										<div class="category_li_div clear">
+											<i class="icon-github min"></i>
+											<div class="category_title"><a href="#">纤体美胸</a> </div>
+											<i class="icon-angle-right"></i>
+											<!--隐藏列表开始-->
+											<div class="sasa_category_sidebox box05">
+												<div class="categor_haed">
+													<a href="">纤体美胸</a>
+												</div>
+												<div class="categor_list box01lis03">
+                                                    <a href="">纤体护理</a>
+                                                    <a href="">纤体食品</a>
+                                                    <a href="">纤体工具</a>
+                                                    <a href="">纤体套装</a>
+                                                    <a href="">美胸用品</a>
+                                                </div>
+											</div>
+											<!--隐藏列表结束-->
+										</div>
+									</li>
+									<li class="category_ul_li"id="li_06">
+										<div class="category_li_div clear">
+											<i class="icon-leaf min"></i>
+											<div class="category_title"><a href="#">个人护理</a> </div>
+											<i class="icon-angle-right"></i>
+											<!--隐藏列表开始-->
+											<div class="sasa_category_sidebox box06">
+												<div class="categor_haed">
+													<a href="">身体护理</a>
+												</div>
+												<div class="categor_list box01lis03">
+                                                        <a href="">沐浴/润肤</a>
+                                                        <a href="">洗发/护发</a>
+                                                        <a href="">头发造型</a>
+                                                        <a href="">手足部护理</a>
+                                                        <a href="">脱毛用品</a>
+                                                        <a href="">女性护理</a>
+                                                        <a href="">止汗香体</a>
+                                                </div>
+                                                <div class="categor_haed">
+													<a href="">身体护理</a>
+												</div>
+												<div class="categor_list box01lis05">
+                                                    <a href="">隐形眼镜</a>
+                                                    <a href="">口腔护理</a>
+                                                    <a href="">家具用品</a>
+                                                    <a href="">头饰/饰物</a>
+                                                </div>
+											</div>
+											<!--隐藏列表结束-->
+										</div>
+									</li>
+									<li class="category_ul_li"id="li_07">
+										<div class="category_li_div clear">
+											<i class="icon-group min"></i>
+											<div class="category_title"><a href="#">男士专区</a> </div>
+											<i class="icon-angle-right"></i>
+											<!--隐藏列表开始-->
+											<div class="sasa_category_sidebox box07">
+												<div class="categor_haed">
+													<a href="">男士专区</a>
+												</div>
+												<div class="categor_list box01lis03">
+                                                    <a href="">男士洁面</a>
+                                                    <a href="">男士护肤</a>
+                                                    <a href="">剃须护理</a>
+                                                    <a href="">男士头部护理</a>
+                                                </div>
+											</div>
+											<!--隐藏列表结束-->
+										</div>
+									</li>
+									<li class="category_ul_li"id="li_08">
+										<div class="category_li_div clear">
+											<i class="icon-tint min"></i>
+											<div class="category_title"><a href="#">孕婴护理</a> </div>
+											<i class="icon-angle-right"></i>
+											<!--隐藏列表开始-->
+											<div class="sasa_category_sidebox box08">
+												<div class="categor_haed"style="height: 51px;">
+													<a href="">孕婴护理</a>
+												</div>
+												<div class="categor_list box01lis05">
+                                                    <a href="">母婴团</a>
+                                                    <a href="">婴儿沐浴</a>
+                                                    <a href="">婴儿护肤</a>
+                                                    <a href="">婴儿食品</a>
+                                                    <a href="">孕妇护肤</a>
+                                                    <a href="">孕妇食品</a>
+                                                    <a href="">其他孕婴工具</a>
+                                                </div>
+											</div>
+											<!--隐藏列表结束-->
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="tj-category-rs">
+						<ul id="sub_nav_551">
+							<li class="sub-nav_item"><a href="#">面部护肤</a></li>
+							<li class="sub-nav_sep"><a>/</a></li>
+							<li class="sub-nav_item"><a href="#">彩妆</a></li>
+							<li class="sub-nav_sep"><a>/</a></li>
+							<li class="sub-nav_item"><a href="#">限时特卖<i class="sub_nav_hoticon"></i></a></li>
+							<li class="sub-nav_sep"><a>/</a></li>
+							<li class="sub-nav_item"><a href="#">贵宾专享</a></li>
+							<li class="sub-nav_sep"><a>/</a></li>
+							<li class="sub-nav_item"><a href="#">闪电保税专区<i class="sub_nav_hoticon"></i></a></li>
+							<li class="sub-nav_sep"><a>/</a></li>
+							<li class="sub-nav_item"><a href="#">清仓特卖</a></li>
+							<li class="sub-nav_sep"><a>/</a></li>
+							<li class="nav-item clear">
+								<div class="nav-text">
+									<a href="#">所有品牌
+										<i class="icon-sort-down"></i>
+									</a>
+									
+								</div>
+								<div class="nav-itembox">
+									<div class="navtip-arr">
+										<i class="icon-sort-up"></i>
+									</div>
+									<div class="navtip-text">热门品牌</div>
+									<div class="clb clear">
+										<div class="nav-bran fl">
+											<ul class="scroll-pane">
+												<li class="clear"><a href="#"style="color: #333;">森田药妆 SAM TIN</a></li>
+												<li class="clear"><a href="#"style="color: #333;">希思黎 Sisley</a></li>
+												<li class="clear"><a href="#"style="color: #333;">雅诗兰黛 Estee Lauder</a></li>
+												<li class="clear"><a href="#"style="color: #333;">兰蔻 Lancome</a></li><br />
+												<li class="clear"><a href="#"style="color: #333;">SK-II</a></li><br />
+												<li class="clear"><a href="#"style="color: #333;">资生堂 Shiseido</a></li>
+												<li class="clear"><a href="#"style="color: #333;">高丝 Kose</a></li>
+												<li class="clear"><a href="#"style="color: #333;">雅漾 Avene</a></li>
+											</ul>
+											<a href="#" class="nav-brandmore"><b>查看所有品牌</b> </a>
+										</div>
+										<div class="nav-brandpic fr">
+											<ul>
+												<li><a href="#"><img src="../img/fr01.jpg" /> </a> </li>
+												<li><a href="#"><img src="../img/fr02.jpg" /> </a> </li>
+												<li><a href="#"><img src="../img/fr03.jpg" /> </a> </li>
+												<li><a href="#"><img src="../img/fr04.jpg" /> </a> </li>
+												<li><a href="#"><img src="../img/fr05.jpg" /> </a> </li>
+												<li><a href="#"><img src="../img/fr06.jpg" /> </a> </li>
+												<li><a href="#"><img src="../img/fro7.jpg" /> </a> </li>
+												<li><a href="#"><img src="../img/fr08.jpg" /> </a> </li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--nav-category结束-->
+			
+			<!--main开始-->
+			<div class="page">
+				<!--导航开始-->
+				<div class="bread-crumbs">
+		            <a href="../index.html">首页</a>
+					/
+					<a href="fase-list.html">面部护肤</a>
+					/
+					<a href="">面膜</a>
+					/
+					<a href="">面膜贴</a>
+					/
+					<h1 class="now"><a href="">金丝燕窝深层保湿面膜</a></h1>
+		      	</div>
+				<!--导航结束-->
+				
+				<!--主体详情开始-->
+				<div id="main" class="prodetailtop clear">
+					
+						
+					<!--商品详情-->
+					<div class="page-maincontent">
+						<div id="product_container" class="product-container clear">
+							<div class="seckill_time2">
+								<s class="zijt"></s>
+								<span class="buy_num fr">
+						            <b class="seckiil_soldnums">0</b>人已购买，下手要快哦！
+						        </span>
+						        <div class="fl">
+						        	<i class="icon-time"></i>
+						        	<span class="now_start_end_time_msg">已结束</span>
+						        </div>
+							</div>
+							<form class="clear">
+								<!--产品详情图片-->
+								<div class="product-side fl">
+									<i class="sidecount itips"><b>4</b></i>
+									<!--商品相册-->
+									<div id="product_album" class="product-album">
+										<div class="product-preview clear">
+											<div class="product-pic">
+												<a class="product-pica">
+													<img class="small-pic" src="../html/img-detail/detail-zhu01.jpg" /> <!--大图-->
+													<!--<div class="album-zooms-handle"></div>-->
+												</a>
+											</div>
+											<div class="product-album-zoom">
+												<a href="" title="点击查看大图" target="_blank" class="icon"><i class="icon-search"></i></a>
+											</div>
+										</div>
+										<dl class="product-tips cld">
+											<dd><img src="../html/img-list/hanguoimg.png" alt="韩国品牌">   韩国品牌	</dd>
+											<dd><img src="../html/img-detail/hot-sale.png" alt="热卖中">热卖中</dd>
+											<dd><img src="../html/img-detail/good-reputation.png" alt="热卖中">好评中</dd>
+										</dl>
+										<div class="product-thumb">
+											<div class="flip prev forward over"><a href="" class="icon"><i class="icon-caret-left"></i></a></div>
+											<div class="thumbnail-list"><!--小图-->
+										      	<ul style="width: 542px; margin-left: 0px;" class="clear" id="ull">
+										            <li class="active">
+										            	<img class="xt" src="../html/img-detail/detail-zhu01.jpg" alt="金丝燕窝深层保湿面膜" height="60" width="60">
+										          	</li>
+										            <li class="">
+											            <img class="xt" src="../html/img-detail/detail-zhu02.jpg" alt="金丝燕窝深层保湿面膜" height="60" width="60">
+										          	</li>
+										            <li class="">
+											          	<img class="xt" src="../html/img-detail/detail-zhu03.jpg" alt="金丝燕窝深层保湿面膜" height="60" width="60">
+										            <li class="">
+											            <img class="xt" src="../html/img-detail/detail-zhu04.jpg" alt="金丝燕窝深层保湿面膜" height="60" width="60">
+										            </li>
+										             <li class="">
+											           	<img class="xt" src="../html/img-detail/detail-zhu05.jpg" alt="金丝燕窝深层保湿面膜" height="60" width="60">
+										             </li>
+										        </ul>
+										    </div>
+											<div class="flip next backward "><a href="" class="icon"><i class="icon-caret-right"></i></a></div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="product-main fr">
+									<div id="bondedBanner" class="bonded-banner">
+										<span class="bonded_words_show">
+											<img alt="保税仓直送" src="../html/img-detail/tax-free_banner.jpg">
+										</span>
+									</div>
+									<!--标题简介-->
+									<div class="product-titles">
+	           				 			<i class="icon-quote-left"></i>
+	            						SNP 金丝燕窝深层保湿面膜含有高浓缩燕窝原液，集中供给皮肤水分锁水能力突出，在皮肤水分子表面形成保护膜防止水分快速流失。        
+									</div>
+									<div class="product-line">
+										<p class="product-titles2">
+                                			<b class="yew bonded_words_show">[保税仓直送]</b>
+											<a href="/brand/snp" target="_blank">SNP&nbsp;</a> 
+											精华面膜系列            
+										</p>
+										<p class="product-titles2">金丝燕窝深层保湿面膜&nbsp;(10片)&nbsp;</p>
+										<div class="product-information">
+											<!--购买区-->
+											<div class="product-buy">
+												<div class="product-action">
+													<ul>
+														<!--商品库存-->
+														<li class="product-buy-quantity">
+															<label class="item-label" for="for_quantity_input">数量：</label>
+															<span class="item-content">
+															    <span class="p-quantity">
+															    	<a href="" class="btn-decrease">-</a>
+															    	<input name="goods[num]" id="for_quantity_input" class="action-quantity-input" value="1" min="1" max="" type="text">
+															    	<a href="javascript:void(0);" class="btn-increase">+</a>
+															    </span>
+															    <span class="p-store"></span>
+															    <input name="stock" value="" type="hidden">
+															</span>
+														</li>
+														<!--价格显示区-->
+														<div class="product-concerns">
+															<span>特卖价</span>  &nbsp;  <del>市场价</del>
+														</div>
+														<!--购买按钮-->
+														<li class="product-buy-action">
+															<span class="js">抢购已结束</span>
+															<span class="code-pro pop-wrapper action-scanbuy">
+        														<button type="button" class="btn action-handle">扫扫即加入购物车  <i class="icon icon-qrcode"></i> &nbsp;  <i class="icon-caret-down"></i></button>
+        														<div class="pop-body" >
+         											 				<img src="../html/img-detail/job.png" alt="商品二维码" height="196" width="196">
+        														</div>
+    						 					 			</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!--商品评分-->
+											<div class="seckill-score clb">
+												<span>评分</span>
+												<i class="icon-star"></i>
+												<i class="icon-star"></i>
+												<i class="icon-star"></i>
+												<i class="icon-star"></i>
+												<i class="icon-star"></i>
+												<span>(887人评价)</span>
+											</div>
+											<!--分享推荐收藏-->
+											<div class="product-share">
+												<div class="share fr">
+												    <span class="fl">分享到</span>
+												    <ul class="share-mini">
+												        <li>
+												        	<a href="#"><i class="icon"></i> </a>
+												        </li>
+												        <li>
+												        	<a href="#"><i class="icon a2"></i> </a>
+												        </li>
+												        <li>
+												        	<a href="#"><i class="icon a3"></i> </a>
+												        </li>
+												        <li>
+												        	<a href="#"><i class="icon a4"></i> </a>
+												        </li>
+												        <li>
+												        	<a href="#"><i class="icon a5"></i> </a>
+												        </li>
+												        <li>
+												        	<a href="#"><i class="icon a6"></i> </a>
+												        </li>
+												    </ul>
+												</div>
+												<a href="" class="btn btn-rounded btn-addfav fl"><i class="icon-heart-empty"></i>   <i class="text">收藏</i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</form>
+						</div>
+					</div>
+					
+						
+					<!--精选优惠-->
+					<div class="prode-left lsidebar">
+						<div class="mboxDefault"></div>
+						<div class="">
+							<div class="gray-box m">
+								<div class="gray-title">浏览记录</div>
+								<div class="gray-content">
+									<div class="product-list">
+										<li class="product-item">
+											<a><img src="../html/img-detail/jl01.jpg" /> </a>
+											<div class="prode-info">
+												<div class="prode-name">
+													<b class="yew">[保税仓直送]</b>
+													SNP 精华面膜系列 金丝燕窝深层	
+												</div>
+												<div class="product-price">￥68.0<del class="grey f12 ml10">￥68.0</del></div>
+											</div>
+										</li>
+										<li class="product-item">
+											<a><img src="../html/img-detail/jl02.jpg" /> </a>
+											<div class="prode-info">
+												<div class="prode-name">
+													<b class="yew">[保税仓直送]</b>
+													GUERISSON 奇迹马	
+												</div>
+												<div class="product-price">￥79.0<del class="grey f12 ml10">￥89.0</del></div>
+											</div>
+										</li>
+										<li class="product-item">
+											<a><img src="../html/img-detail/jl03.jpg" /> </a>
+											<div class="prode-info">
+												<div class="prode-name">
+													<b class="yew">[保税仓直送]</b>
+													JayJun 补水保湿三部曲水光面膜 	
+												</div>
+												<div class="product-price">￥105.0<del class="grey f12 ml10">￥126.0</del></div>
+											</div>
+										</li>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					<!--商品详情 评论 咨询-->
+					<div class="pro-maincont fr">
+						<div style="height: 76px;">
+							<!--顶部悬停-->
+							<div id="xuanting" class="product-tags clear ss">
+								<div id="js-tags-hd-parameters" class="tags-hd active">
+									<a href="">商品参数</a>
+								</div>
+								<div id="js-tags-hd-parameters" class="tags-hd">
+									<a href="">商品详情</a>
+								</div>
+								<div id="js-tags-hd-parameters" class="tags-hd">
+									<a href="">商品实拍</a>
+								</div>
+								<div id="js-tags-hd-parameters" class="tags-hd">
+									<a href="">用户评价</a>
+								</div>
+								<div class="tags-addtocart">
+									<b class="price f24 action-price fl">￥68.0</b>
+									<a class="btn">加入购物车</a>
+								</div>
+							</div>
+						</div>
+						<div class="clb">
+							<!--商品参数-->
+							<div class="product-section">
+								<div class="product-attributes mod">
+									<div class="mod-title">
+          								<div class="mod-title-text">商品参数</div>
+  									</div>
+									<ul class="clear">
+										<!--固定参数-->
+										<li><span>商品编号：</span><div class="attributes-cont">000001077982</div></li>
+										<li><span>商品品牌：</span><div class="attributes-cont">SNP</div></li>
+										<li><span>商品系列：</span><div class="attributes-cont">精华面膜系列</div></li>
+										<li><span>商品名称：</span><div class="attributes-cont">金丝燕窝深层保湿面膜</div></li>
+										<li><span>商品规格：</span><div class="attributes-cont">10片</div></li>
+										<li><span>原产国家：</span><div class="attributes-cont">韩国（具体产地以收到实物为准）</div></li>
+									</ul>
+								</div>
+							</div>
+							<!--商品详情-->
+							<div class="product-detail">
+								<div class="pro-detailarea">
+									<div class="mod-title">
+         								<div class="mod-title-text">商品详情</div>
+     								</div>
+     								<div class="article-main">
+     									<img src="../html/img-detail/detailimg.jpg" />
+     									<p><font face="Tahoma" size="2"><strong>使用方法</strong></font></p>
+     									<img src="../html/img-detail/papermask.jpg" />
+     								</div>
+								</div>
+							</div>
+							<!--商品实拍-->
+							<div class="product-pics">
+								<div class="detail-content mod">
+									<div class="mod-title">
+          								<div class="mod-title-text">商品实拍</div>
+     								</div>
+     								<div class="detailarea-content">
+     									<div style="width: 100%;">
+     										<div style="margin: 0px auto;">
+     											<div style="text-align: center;">
+     												<img src="../html/img-detail/slide_snp_01.jpg" />
+     												<img src="../html/img-detail/slide_snp_02.jpg" />
+     												<img src="../html/img-detail/slide_snp_03.jpg" />
+     												<img src="../html/img-detail/slide_snp_04.jpg" />
+     												<img src="../html/img-detail/slide_snp_05.jpg" />
+     											</div>
+     											<div style="text-align: center;"> </div>
+     										</div>
+     									</div>
+     								</div>
+								</div>
+							</div>
+							<!--用户评价-->
+							
+							
+							
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--main结束-->
+			
+			
+			
+			<!--配送方式、付款方式   开始-->
+			<div class="footer-rs floor">
+				<div class="helper">
+					<!--满XX包邮开始-->
+					<div class="sasa_promise clear">
+						<div class="sasa_promise_item sasa_promise_item_0">
+							<div class="sasa_promise_img sasa_promise_img0"></div>
+							<div class="sasa_promise_content">
+								<p class="sasa_promise_title">满￥249包邮</p>
+								<p class="sasa_promise_subtit">全球采购 海淘so easy</p>
+							</div>
+						</div>
+						<div class="sasa_promise_item sasa_promise_item_1">
+							<div class="sasa_promise_img sasa_promise_img1"></div>
+							<div class="sasa_promise_content">
+								<p class="sasa_promise_title">正品保证</p>
+								<p class="sasa_promise_subtit">专注美妆护肤38年</p>
+							</div>
+						</div>
+						<div class="sasa_promise_item sasa_promise_item_2">
+							<div class="sasa_promise_img sasa_promise_img2"> </div>
+							<div class="sasa_promise_content">
+					            <p class="sasa_promise_title">香港直邮</p>
+					            <p class="sasa_promise_subtit">香港直发 美丽到家</p>
+					        </div>
+						</div>
+						<div class="sasa_promise_item sasa_promise_item_3">
+							<div class="sasa_promise_img sasa_promise_img3"> </div>
+							<div class="sasa_promise_content">
+					            <p class="sasa_promise_title">30天退换保证</p>
+					            <p class="sasa_promise_subtit">为您提供售后无忧保障</p>
+					        </div>
+						</div>
+						<div class="sasa_promise_item sasa_promise_item_4">
+							<div class="sasa_promise_img sasa_promise_img4"> </div>
+							<div class="sasa_promise_content">
+					            <p class="sasa_promise_title">香港上市</p>
+					            <p class="sasa_promise_subtit">股票代码: HK00178</p>
+					        </div>
+						</div>
+					</div>
+					<!--满XX包邮结束-->
+					<div class="page-rs clear">
+						<!--左边开始-->
+						<div class="footer_left clear">
+							<div class="clear">
+								<div class="btom-info"> </div>
+								<div class="helper-item">
+									<div class="helper-item-rs">
+										<ul>
+											<li id="helper-item_ul_lastli"><a href="#"> 新手上路</a> </li>
+											<li><a href="#"> 购物流程</a> </li>
+											<li><a href="#"> 优惠券说明</a> </li>
+											<li><a href="#"> 常见问题</a> </li>
+											<li><a href="#"> 联系我们</a> </li>
+										</ul>
+									</div>
+									<div class="helper-item-rs">
+										<ul>
+											<li id="helper-item_ul_lastli"><a href="#"> 付款方式</a> </li>
+											<li><a href="#"> 在线支付</a> </li>
+											<li><a href="#"> 积分支付</a> </li>
+										</ul>
+									</div>
+									<div class="helper-item-rs">
+										<ul>
+											<li id="helper-item_ul_lastli"><a href="#"> 配送方式</a> </li>
+											<li><a href="#"> 配送说明</a> </li>
+											<li><a href="#"> 追踪订单</a> </li>
+										</ul>
+									</div>
+									<div class="helper-item-rs">
+										<ul>
+											<li id="helper-item_ul_lastli"><a href="#">售后服务</a> </li>
+											<li><a href="#"> 正品保证</a> </li>
+											<li><a href="#"> 价格承诺</a> </li>
+											<li><a href="#"> 30天退换保证</a> </li>
+											<li><a href="#"> 退款程序</a> </li>
+											<li><a href="#"> 更改订单</a> </li>
+										</ul>
+									</div>
+									<div class="helper-item-rs">
+										<ul>
+											<li id="helper-item_ul_lastli"><a href="#"> 沙沙会员</a> </li>
+											<li><a href="#"> 积分奖赏</a> </li>
+											<li><a href="#"> VIP会员计划</a> </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="clear"><a href="#"><img src="../img/foot-img.jpg" /></a></div>
+						</div>
+						<!--左边结束-->
+						<!--右边开始-->
+						<div class="footer_right clear">
+							<div class="btom-code">
+								<img src="../img/heade-wx.jpg" />
+								<p class="btom-code-wx">沙沙网官方微信</p>
+								<p class="btom-code-wxid">ID:hksasadotcom</p>
+							</div>
+							<div class="btom-code">
+								<img src="../img/heade_wb.jpg" />
+								<p class="btom-code-wx">沙沙网官方微博</p>
+								<p class="btom-code-wxid">@沙沙网</p>
+							</div>
+						</div>
+						<!--右边结束-->
+					</div>
+					
+					<!--右侧边栏开始-->
+					<div class="sidebar">
+						<div class="sidebar-box">
+							<div class="box-one">
+								<div class="sidebars-explain">
+									<a href="#" target="_blank">选购境外商品需知</a>
+								</div>
+								<div class="sidecarts-w-h"></div>
+								<div style="" class="mui-mbar-tab" >
+									<a class="sidebar-link" href="#"><i class="icon-user" style="color:#C69A62;"></i></a>
+									<a href="" class="mui-mbar-tab-tip">
+										我的账户
+										<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div>
+									</a>
+								</div>
+								<div class="sidecart">
+									<div class="sidecart-text">
+										<a><i class="icon-shopping-cart"></i>购物车</a>
+										<b><span id="js_cartnum">0</span></b>
+									</div>
+									<div class="sidecart-cont">
+										<div class="cart-conttitle">
+											<button class="btn-close" id="js_closecart" title="关闭" type="button">
+												<i class="icon-remove-circle"></i>
+											</button>购物车
+										</div>
+										<div id="js_updatecart" class="J-updatecart">
+											<div class="no-information ui-sidecart-empty">购物车中还没有商品，赶紧选购吧！</div>
+										</div>
+									</div>
+								</div>
+								<div style="" class="mui-mbar-tab" >
+									<a class="sidebar-link" href="#"><i class="icon-heart" style="color:#C69A62;"></i></a>
+									<a href="" class="mui-mbar-tab-tip">
+										收藏
+										<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div>
+									</a>
+								</div>
+								<div style="" class="mui-mbar-tab" >
+									<a class="sidebar-link" href="#"><i class="icon-refresh" style="color:#C69A62 ;"></i></a>
+									<a href="" class="mui-mbar-tab-tip">
+										浏览记录
+										<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div>
+									</a>
+								</div>
+								<div style="" class="mui-mbar-tab" >
+									<a class="sidebar-link" href="#"><i class="icon-comments-alt" style="color: #C69A62;"></i></a>
+									<a href="" class="mui-mbar-tab-tip">
+										线上客服
+										<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div>
+									</a>
+								</div>
+								<div style="" class="mui-mbar-tab mbar_top" >
+									<a class="sidebar-link" href="#">
+										<i class="icon-caret-up" style="color: #C69A62;"></i>
+										TOP
+									</a>
+								</div>
+							</div>
+							<div class="box-two"></div>
+						</div>
+					</div>
+					<!--右侧边栏结束-->
+					
+				</div>
+			</div>
+			<!--配送方式、付款方式   结束-->
+			
+			<!--底部开始-->
+			<div class="footer_link">
+				<div class="footer_link_inner">
+					<div class="footer_linkboard">
+						<a href="#"> 关于沙沙</a>
+						<a href="#"> 使用条款</a>
+						<a href="#"> 隐私策略</a>
+						<a href="#"> 批发服务</a>
+						<a href="#"> 招商合作</a>
+						<a href="#"> 帮助中心</a>
+						<a href="#"> 港澳店铺推广</a>
+						<a href="#"> 人才招聘</a>
+						<a href="#"> 联系我们</a>
+						<a href="#"> 其他送货地区</a>
+					</div>
+					<div class="footer__copyright"> Copyright 2000-2016 Sa Sa dot Com Limited  版权所有莎莎国际控股有限公司成员</div>
+				</div>
+			</div>
+			<!--底部结束-->
+		</div>
+		
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

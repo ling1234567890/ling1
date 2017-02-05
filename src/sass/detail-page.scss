@@ -1,0 +1,1147 @@
+//框架：最外围的div
+.index-page{
+    //主体部分 page 开始
+    .page{
+        width: 1090px;
+        margin: 0px auto;
+        //导航
+        .bread-crumbs{
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            margin: 15px auto;
+            color: #888;
+            a{color: #888;text-decoration: none;}
+            .now{
+                font-weight: normal;
+                display: inline;
+                font-size: 14px;
+            }
+        }
+        //主体详情开始
+        .prodetailtop{
+            
+            //商品详情
+            .page-maincontent{
+                background: none repeat scroll 0% 0% #FFF;
+                margin-bottom: 30px;
+                .product-container{
+                    width: 100%;
+                    table-layout: fixed;//让表格布局固定住
+                    .seckill_time2{
+                        background: none repeat scroll 0% 0% #BF9B5F;
+                        height: 58px;
+                        line-height: 50px;
+                        color: #FFF;
+                        font-size: 24px;
+                        padding-left: 15px;
+                        position: relative;
+                        .zijt{
+                            width: 20px;
+                            height: 19px;
+                            background: url(../html/img-detail/tips.png) no-repeat scroll -360px -405px transparent;
+                            display: block;
+                            position: absolute;
+                            left: 40px;
+                            top: 50px;
+                        }
+                        .buy_num{
+                            font-size: 14px;
+                            padding-right: 30px;
+                            float: right;
+                            .seckiil_soldnums{font-size: 24px;}
+                        }
+                        .fl{
+                            width: 54%;
+                            float: left;
+                            .icon-time{font-size: 30px;}
+                        }
+                    }
+                    form{
+                        margin: 0px;
+                        .fl{float: left;}
+                        .product-side{
+                            width: 550px;
+                            .sidecount{
+                                width: 108px;
+                                height: 108px;
+                                padding: 20px 40px 0px 0px; 
+                                background: url(../html/img-detail/tips.png) no-repeat scroll 0% 0% transparent;
+                                background-position: 0px -489px;
+                                color: #FFF;
+                                margin: 10px 0px 0px 35px;
+                                display: block;
+                                text-align: right;
+                                b{
+                                    font-family: Georgia,"Times New Roman",Times,serif;
+                                    font-size: 40px;
+                                    margin-right: 5px;
+                                    font-weight: normal;
+                                    font-style: italic;
+                                }
+                            }
+                            .product-album{
+                                width: 500px;
+                                margin: 25px auto;
+                                position: relative;
+                                .product-preview {
+                                    position: relative;
+                                    .product-pic{
+                                        width: 300px;
+                                        height: 300px;
+                                        line-height: 298px;
+                                        position: relative;
+                                        -moz-user-select: none;
+                                        overflow: hidden;
+                                        text-align: center;
+                                        font-family: Arial;
+                                        margin: 0px auto;
+                                        padding: 0px;
+                                        .small-pic{
+                                            width: 300px;
+                                            height: 300px;
+                                            border: medium none;
+                                            vertical-align: middle;
+                                        }
+                                        .album-zooms-handle{
+                                            width: 200px;
+                                            height: 150px;
+                                            left: 10px;
+                                            top: 85px;
+                                            visibility: hidden;
+                                            position: absolute;
+                                            z-index: 200;
+                                            border: 1px solid red;
+                                            overflow: hidden;
+                                            background-color: #B3D5FF;
+                                            opacity: 0.5;
+                                            line-height: 1;
+                                            cursor: move;
+                                        }
+                                    }
+                                    .product-album-zoom{
+                                        position: absolute;
+                                        bottom: 0px;
+                                        right: 0px;
+                                        z-index: 11;
+                                        background-color: #F6F6F6;
+                                        width: 24px;
+                                        height: 24px;
+                                        text-align: center;
+                                        opacity: 0.85;
+                                        a{
+                                            color: #666;
+                                            font-size: 21px;
+                                            line-height: 24px;
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                                .product-tips{
+                                    width: 88%;
+                                    margin: 0px auto 20px;
+                                    dd{
+                                        display: inline-block;
+                                        margin-right: 10px;
+                                        color: #999;
+                                        float: left;
+                                        img{
+                                            vertical-align: middle;
+                                            margin-right: 5px;
+                                            max-height: 20px;
+                                        }
+                                    }
+                                }
+                                .product-thumb{
+                                    margin-top: 10px;
+                                    width: 100%;
+                                    position: relative;
+                                    clear: left; 
+                                    .prev{left: 0px;}
+                                    .next{right: 0px;}
+                                    .flip{
+                                        position: absolute;
+                                        top: 0px;
+                                        margin: 0px;
+                                        margin-top: 5px;
+                                        width: 16px;
+                                        height: 105px;
+                                        line-height: 64px;
+                                        text-align: center;
+                                        border-radius: 8px;
+                                        a{
+                                            color: #ccc;
+                                            cursor: default;
+                                            display: block;
+                                            font-size: 28px;
+                                            margin-left: -1px;
+                                            margin-top: 15px;
+                                            text-decoration: none;
+                                        }
+                                    }
+                                    .thumbnail-list{
+                                        margin: 0px 26px;
+                                        padding-top: 5px;
+                                        overflow: hidden;
+                                        width: 450px;
+                                        height: 105px;
+                                        ul{
+                                            width:542px ;
+                                            margin-left: -108px;
+                                            margin: 0px;padding: 0px;
+                                            li{
+                                                margin: 0px 5px 0px 0px;
+                                                float: left;
+                                                line-height: 100px;
+                                                overflow: hidden;
+                                                text-align: center;
+                                                font-family: arial;
+                                                width: 93px;
+                                                height: 94px;
+                                                border: 1px solid #C0C0C0;
+                                            }
+                                            .active{
+                                                position: relative;
+                                                padding: 0px;
+                                                border: 5px solid #E5CBB2;
+                                                width: 93px;
+                                                height: 94px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .fr{float: right;}
+                        .product-main{
+                            width: 495px;
+                            margin-right: 0px;
+                            padding-right: 5px;
+                            padding-top: 5px;
+                            .bonded-banner{
+                                width: 495px;
+                                height: 44px;
+                                margin-bottom: 24px;
+                                margin-left: -10px;
+                                span{
+                                    img{
+                                        width: 100%;
+                                        height: auto;
+                                        display: block;
+                                    }
+                                }
+                                
+                            }
+                          //标题简介
+                            .product-titles{
+                                padding-bottom: 30px;
+                                line-height: 1.2;
+                                text-align: left;
+                                font-size: 22px;
+                                font-weight: bold;
+                                .icon-quote-left{
+                                    color: #C29B60;
+                                    font-size: 25px;
+                                    vertical-align: super;
+                                }
+                            }
+                            .product-line{
+                                border-left: 1px dashed #F0EEE2;
+                                padding-left: 30px;
+                                margin-left: -30px;
+                                clear: both;
+                                .product-titles2{
+                                    color: #505A64;
+                                    font-size: 18px;
+                                    line-height: 26px;
+                                    .yew { color: #EE9C23;}
+                                    a{text-decoration: none;color: #3E3E3E;}
+                                }
+                                .product-information{
+                                    line-height: 2;
+                                    float: left;
+                                    width: 100%;
+                                    padding-bottom: 40px;
+                                    margin-left: -40px;
+                                    //购买区
+                                    .product-buy{
+                                        padding: 10px 0px;
+                                        margin-top: 10px;
+                                        .product-buy-quantity{
+                                            margin-bottom: 20px;
+                                            .item-label{float: left;}
+                                            .item-content{
+                                                display: block;
+                                                .p-quantity{
+                                                    width: 74px;
+                                                    a{
+                                                        display: inline-block;
+                                                        width: 20px;
+                                                        height: 21px;
+                                                        overflow: hidden;
+                                                        vertical-align: middle;
+                                                        border: 1px solid #F2F2F2;
+                                                        text-align: center;
+                                                        font: bold 14px/22px simsun,serif;
+                                                        background: none repeat scroll 0% 0% #F2F2F1;
+                                                        text-decoration: none;
+                                                        color: #333;
+                                                        margin: 0px;
+                                                    }
+                                                    input{
+                                                        width: 30px;
+                                                        height: 21px;
+                                                        line-height: 21px;
+                                                        vertical-align: middle;
+                                                        border-width: 1px 0px;
+                                                        border-style: solid;
+                                                        border-color: #F2F2F2;
+                                                        text-align: center;
+                                                        margin-left: -4px;
+                                                        margin-right: -4px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .product-concerns{
+                                            position: relative;
+                                            padding-bottom: 5px;
+                                            margin-bottom: 5px;
+                                            color: #C0C0C0;
+                                        }
+                                        .product-buy-action{
+                                            word-break: break-all;
+                                            word-wrap: break-word;
+                                            .js{
+                                                margin-right: 15px;
+                                                width: 220px;
+                                                height: 50px;
+                                                background:#E7E7E7;
+                                                line-height: 50px;
+                                                overflow: hidden;
+                                                font-weight: bold;
+                                                display: inline-block;
+                                                vertical-align: middle;
+                                                text-align: center;
+                                            }
+                                            .code-pro{
+                                                border: 1px solid #DEDEDE;
+                                                padding: 15px 18px;
+                                                color: #999;
+                                                position: relative;
+                                                .btn{
+                                                    margin-right: 0px;
+                                                    padding: 3px 5px;
+                                                    border-right: 1px solid #FFF;
+                                                    border-width: 0px 1px 1px;
+                                                    border-style: solid;
+                                                    border-color: #FFF;
+                                                    -moz-border-top-colors: none;
+                                                    -moz-border-right-colors: none;
+                                                    -moz-border-bottom-colors: none;
+                                                    -moz-border-left-colors: none;
+                                                    border-image: none;
+                                                    background: #fff;
+                                                }
+                                                .pop-body{
+                                                    left: 0px;
+                                                    bottom: 46px;
+                                                    padding: 0px;
+                                                    position: absolute;
+                                                    overflow: hidden;
+                                                    border: 1px solid #DEDEDE;
+                                                    margin-left: -1px;
+                                                    display: none;
+                                                }
+                                            }
+                                            .code-pro:hover .pop-body{
+                                                 display: block;
+                                            }
+                                        }
+                                    }
+                                    //商品评分
+                                    .seckill-score{
+                                        margin-left: 40px;
+                                        .icon-star{color: #C29B60;}
+                                    }
+                                    //分享推荐收藏
+                                    .product-share{
+                                        border-top: 1px solid #DFDFDF;
+                                        margin-top: 15px;
+                                        padding-top: 20px;
+                                        margin-left: 40px;
+                                        .share{
+                                            width: 230px;
+                                            text-align: right;
+                                            float: right;
+                                            .fl{float: left;}
+                                            .share-mini{
+                                                width: 175px;
+                                                float: right;
+                                                margin: 0px;
+                                                padding: 0px;
+                                                li{
+                                                    float: left;
+                                                    display: inline-block;
+                                                    a{
+                                                        line-height: 16px;
+                                                        padding: 5px 2px;
+                                                        display: block;
+                                                        white-space: nowrap;
+                                                        .icon{
+                                                            width: 20px;
+                                                            height: 20px;
+                                                            display: inline-block;
+                                                            vertical-align: -3px;
+                                                            background-image: url(../html/img-detail/share.png);
+                                                            margin-right: 5px;
+                                                        }
+                                                        .a2{background-position: 0px -20px; }
+                                                        .a3{background-position: 0px -40px; }
+                                                        .a4{background-position: 0px -60px; }
+                                                        .a5{background-position: 0px -80px; }
+                                                        .a6{background-position: 0px -100px; }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .btn{
+                                            display: inline-block;
+                                            white-space: nowrap;
+                                            vertical-align: middle;
+                                            float: left;
+                                            i{color: #333;font-style: normal;}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+            
+            //精选优惠
+            .lsidebar{
+                float: left;
+                width:253px;
+                .mboxDefault{visibility: hidden;}
+                .gray-box{
+                    background: none repeat scroll 0% 0% #FFF;
+                    overflow: hidden;
+                    margin-bottom: 26px;
+                    .gray-title{
+                        height: 50px;
+                        line-height: 50px;
+                        border-left: 5px solid #C69A62;
+                        border-bottom: 1px solid #EBEBEB;
+                        color: #585C65;
+                        font-size: 16px;
+                        padding-left: 12px;
+                        position: relative;
+                    }
+                    .gray-content{
+                        padding: 0px;
+                        .product-item{
+                            height: 69px;
+                            border-top: 1px dashed #D4D4D4;
+                            padding: 20px 10px;
+                            margin-top: -1px;
+                            margin-bottom: 30px;
+                            list-style: none;
+                            a{
+                                display: block;
+                                width: 69px;
+                                height: 69px;
+                                overflow: hidden;
+                                float: left;
+                                text-align: center;
+                                img{max-width: 69px;max-height: 69px;}
+                            }
+                            .prode-info{
+                                margin-left: 79px;
+                                overflow: hidden;
+                                .prode-name{
+                                    display: block;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    .yew{color: #ee9c23;} 
+                                }
+                                .product-price{
+                                    width: 100%;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    color: #EC3E7D;
+                                    .grey{
+                                        color: #959595;
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            //商品详情 评论 咨询
+            .fr{float: right;}
+            .pro-maincont{
+                width: 811px;
+                margin-bottom: 30px;
+                .ss{ box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);}
+                //顶部悬停
+                .product-tags{
+                    background: none repeat scroll 0% 0% #FFF;
+                    height: 50px;
+                    .active{border-bottom: 3px solid #C69A62;}
+                    .tags-hd{
+                        font-size: 14px;
+                        float: left;
+                        margin-right: 5px;
+                        font-weight: normal;
+                        height: 50px;
+                        a{
+                            color: #555C67;
+                            border: 1px solid #FFF;
+                            display: block;
+                            padding: 2px 26px;
+                            height: 42px;
+                            line-height: 42px;
+                            font-size: 16px;
+                            text-decoration: none;
+                        }
+                    }
+                    .tags-addtocart{
+                        float: right;
+                        width: 260px;
+                        .price{line-height: 50px;float: left;color: #ec3e7d;font-size: 24px;}
+                        a{
+                            background: none repeat scroll 0% 0% #EC3E7D;
+                            padding: 0px 20px;
+                            height: 50px;
+                            line-height: 50px;
+                            color: #FFF;
+                            font-size: 16px;
+                            float: right;
+                            margin-left: 15px;
+                            border-radius: 0px;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                        .btn{
+                            display: inline-block;
+                            white-space: nowrap;
+                            vertical-align: middle;
+                            border: 0px none;
+                        }
+                    }
+                }
+                //商品参数
+                .product-section{
+                    overflow: hidden;
+                    margin-bottom: 26px;
+                    .product-attributes{
+                        margin-bottom: 0px;
+                        background-color: #fff;
+                        padding-top: 20px;
+                        .mod-title{
+                            height: 32px;
+                            border-left: 3px solid #DB3F7E;
+                            .mod-title-text{
+                                background-position: 110px 3px;
+                                background: url(../html/img-detail/probt.png) no-repeat scroll 110px 3px transparent;
+                                line-height: 32px;
+                                font-weight: 400;
+                                padding-left: 10px;
+                                font-size: 21px;
+                            }
+                        }
+                        ul{
+                            padding: 30px 45px;
+                            li{
+                                clear: both;
+                                color: #333;
+                                padding: 6px 0px;
+                                list-style-type: none;
+                                margin: 0px;
+                                span{
+                                    width: 140px;
+                                    color: #666;
+                                    display: inline-block;
+                                }
+                                .attributes-cont{
+                                    width: 580px;
+                                    float: right;
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
+                //商品详情
+                .product-detail{
+                    overflow: hidden;
+                    .pro-detailarea{
+                        background: none repeat scroll 0% 0% #FFF;
+                        overflow: hidden;
+                        margin-bottom: 26px;
+                        padding-top: 20px;
+                        .mod-title{
+                            height: 32px;
+                            border-left: 3px solid #DB3F7E;
+                            .mod-title-text{
+                                line-height: 32px;
+                                font-weight: 400;
+                                padding-left: 10px;
+                                font-size: 21px;
+                                background: url(../html/img-detail/probt.png) no-repeat scroll 110px 3px transparent;
+                                background-position: 110px -46px;
+                            }
+                        }
+                        .article-main{
+                            padding: 40px 30px;
+                            img{max-width: 100%;}
+                            p{text-indent: 20px;}//缩进
+                        }
+                    }
+                }
+                //商品实拍
+                .product-pics{
+                    overflow: hidden;
+                    .detail-content{
+                        background: none repeat scroll 0% 0% #FFF;
+                        overflow: hidden;
+                        margin-bottom: 26px;
+                        padding-top: 20px;
+                        .mod-title{
+                            height: 32px;
+                            border-left: 3px solid #DB3F7E;
+                            .mod-title-text{
+                                background: url(../html/img-detail/probt.png) no-repeat scroll 110px 3px transparent;
+                                background-position: 110px -100px;
+                                line-height: 32px;
+                                font-weight: 400;
+                                padding-left: 10px;
+                                font-size: 21px;
+                            }
+                        }
+                        .detailarea-content{
+                            padding: 40px 30px;
+                            img{max-width: 100%;}
+                        }
+                    }
+                }
+                //用户评价
+                
+                
+                
+                
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
