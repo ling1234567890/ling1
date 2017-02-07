@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页面</title>
+		<link rel="stylesheet" href="css/homepage.css">	
+		<link rel="stylesheet" href="css/login.css">	
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/index-jq.js"></script>
+		<script src="js/register.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#btn').click(function() {
+					$.post('login.php', {
+						email: $('#email').val(),
+						password: $('#password').val()
+					}, function(response) {
+						var $obj = eval('(' + response + ')');
+						if ($obj.state) {
+							window.location.href = 'index.html';
+						} else {
+							alert($obj.message);
+						}
+					})
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="index-page">
+			
+			<!--顶部开始-->
+			<div class="topbar">
+				<div class="page-rs clear">
+					<!--登录注册-->
+					<div class="login-bar">
+						<span id="loginBar" style="display: block;">
+							<span>欢迎光临沙沙网！</span>
+							<a href="login.html" style="margin-left: 10px;">登录</a>
+							<span class="dividing">或</span>
+							<a href="register.html">免费注册</a>
+						</span>
+					</div>
+					<!--我的账户-->
+					<div class="member-link">
+						<ul>
+							<li class="noline" id="one_li">
+								<div id="mem">
+									<a href="#" rel="nofollow">
+										<i class="icon-user"></i>
+										我的账户
+										<i class="icon-angle-down"></i>
+									</a>
+								</div>
+								<div id="mem_d1" >
+									<dd><a href="#" rel="nofollow">我的订单</a></dd>
+									<dd><a href="#" rel="nofollow">我的积分</a></dd>
+									<dd><a href="#" rel="nofollow">我的优惠券</a></dd>
+									<dd><a href="#" rel="nofollow">我的收藏</a></dd>
+									<dd><a href="#"rel="nofollow">我的评价</a></dd>
+								</div>
+							</li>
+							<li class="noline">
+								<div id="mini">
+									<div class="js_minicart-title tc">
+    									<a href="#"  class="white">
+    										<i class="icon-shopping-cart"></i>
+    										我的购物车
+    									</a>
+  									</div>
+  									<div class="gwc_div">
+  										<div class="empty">购物车中还没有商品，<br>快去挑选心爱的商品吧</div>
+									</div>
+								</div>
+							</li>
+							<li class="noline">
+								<div class="member white">
+									<a href="#"  class="white">
+										<i class="icon-heart"></i>
+										我的收藏
+									</a>
+								</div>
+							</li>
+							<li class="noline">
+								<a rel="nofollow" href="#" class="white">我的站內信</a>
+							</li>
+							<li class="noline">
+								<a rel="nofollow" href="#" class="white">积分中心</a>
+							</li>
+							<li class="noline">
+								<a rel="nofollow" href="#" class="white">Global site</a>
+							</li>
+							<li class="noline">
+								<div class="member_attention">
+									<a rel="nofollow" href="#" class="white">
+										关于我们
+										<img src="img/heade-wb.png"  alt="沙沙微博" id="sha_wb"/>
+										<img src="img/heade-wx.png" alt="沙沙微信" id="sha_wx"/>
+										<div class="heade-wb"><img src="img/heade_wb.jpg" /> </div>
+										<div class="heade-wx"><img src="img/heade-wx.jpg" /> </div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--顶部开结束-->
+			
+			<!--logo开始-->
+			<div class="header-main">
+				<div class="page-rs clear"><br />
+					<!--logo-->
+					<div class="logo"><a href="#"><img src="img/logo.png" /> </a> </div>
+				</div>
+			</div>
+			<!--logo结束-->
+			
+			<!--登录开始-->
+			<div class="page clear">
+				<div class="signin-page-wrap clb clear">
+					<!--用户登录-->
+					<div class="signupin-content signin fr">
+						<div class="sign-title">
+				           	<div class="sign-title-text">  用户登录
+				               <span class="fr">还没有莎莎账号？<a href="register.html">立即注册</a></span>
+				           	</div>
+				      	</div>
+				      	<div class="signupbox">
+				      		<form>
+				      			<ul>
+				      				<!--邮箱-->
+				      				<li class="form-item">
+				      					<span class="form-act">
+				      						<input class="x-input icon-yhm action-account-check " id="email" name="email" value="" placeholder="邮箱"  autofocus="autofocus" type="text">
+				      					</span>
+				      				</li>
+				      				<!--密码-->
+				      				<li class="form-item">
+				      					<span class="form-act">
+				      						<input class="x-input icon-yhm action-account-check mima" id="password" name="password" value="" placeholder="填写密码"  type="password">
+				      					</span>
+				      				</li>
+				      				<li class="form-item">
+				      					<span class="form-act">
+				      						<input name="site_autologin" id="for_auto_signin" class="x-check action-auto-signin" type="checkbox">
+				      						<label for="for_auto_signin" class="form-sub-label">记住我</label>
+				      						<a href="/passport-lost.html" style="vertical-align: middle; color:#ed3f7e;">忘记密码？</a>
+				      					</span>
+				      				</li>
+				      				<!--登录-->
+				      				<li class="form-item-normal">
+								      	<label for="" class="form-label"></label>
+								      	<span class="form-act">
+								       	 	<button type="button" id="btn" class="btn btn-major btn-big"><span>登录</span></button>      
+								      	</span>
+								    </li>
+				      			</ul>
+				      		</form>
+				      		<div class="other-login">
+				      			<p>第三方账号登录</p>
+				      			<ul>
+				      				<li><a href=""><img src="html/imgs/login01.jpg">QQ登录</a></li>
+				      				<li><a href=""><img src="html/imgs/login02.jpg">微博登录</a></li>
+				      				<li><a href=""><img src="html/imgs/login03.jpg">支付宝登录</a></li>
+				      			</ul>
+				      		</div>
+				      	</div>
+					</div>
+				</div>
+			</div>
+			<!--登录结束-->
+			
+		</div>
+		
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

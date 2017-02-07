@@ -3,45 +3,15 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>详情页</title>
+		<title>面部护肤</title>
 		<link rel="stylesheet" href="../css/homepage.css">
-		<link rel="stylesheet" href="../css/fase-list.css">
-		<link rel="stylesheet" href="../css/detail-page.css">
-		<link rel="stylesheet" href="jquery-gdszoom/jquery.gdszoom.css">
+		<link rel="stylesheet" href="../css/fase-list.css">	
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<link rel="stylesheet" href="../css/font-awesome.min.css">
 		<script src="../js/jquery-3.1.1.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
 		<script src="../js/index-jq.js"></script>
-		<script src="../js/detail-page-jq.js"></script>
-		<script src="jquery-gdszoom/jquery.gdszoom.js"></script>
-		<script>
-			document.addEventListener('DOMContentLoaded',function(){
-				//图片切换
-				var bigPic = document.getElementsByClassName('small-pic')[0];
-				var smallPic = document.getElementById('ull').getElementsByTagName('img');
-	
-				// 鼠标移入改变大图路径
-				// 遍历小图，绑定点击事件
-				for(var i=0;i<smallPic.length;i++){
-					smallPic[i].onmouseover = function(){
-						bigPic.src = this.src;
-						
-	//					bigPic.data-big = this.data-big;
-						// 先去掉所有高亮效果
-						for(var i=0;i<smallPic.length;i++){
-							smallPic[i].parentNode.className = '';
-						};
-	
-						this.parentNode.className = 'active';
-					};
-				};
-				
-	//			放大镜
-				$('.product-pic').gdszoom();
-				
-			});
-		</script>
+		<script src="../js/fase-list-jq.js"></script>
 	</head>
 
 	<body>
@@ -57,7 +27,7 @@
 							<span>欢迎光临沙沙网！</span>
 							<a href="#" style="margin-left: 10px;">登录</a>
 							<span class="dividing">或</span>
-							<a href="../html/register.html">免费注册</a>
+							<a href="#">免费注册</a>
 						</span>
 					</div>
 					<!--我的账户-->
@@ -82,7 +52,7 @@
 							<li class="noline">
 								<div id="mini">
 									<div class="js_minicart-title tc">
-    									<a href="../shopping-cart.html"  class="white">
+    									<a href="#"  class="white">
     										<i class="icon-shopping-cart"></i>
     										我的购物车
     									</a>
@@ -508,317 +478,7 @@
 			</div>
 			<!--nav-category结束-->
 			
-			<!--main开始-->
-			<div class="page">
-				<!--导航开始-->
-				<div class="bread-crumbs">
-		            <a href="../index.html">首页</a>
-					/
-					<a href="fase-list.html">面部护肤</a>
-					/
-					<a href="">面膜</a>
-					/
-					<a href="">面膜贴</a>
-					/
-					<h1 class="now"><a href="">金丝燕窝深层保湿面膜</a></h1>
-		      	</div>
-				<!--导航结束-->
-				
-				<!--主体详情开始-->
-				<div id="main" class="prodetailtop clear">
-					
-						
-					<!--商品详情-->
-					<div class="page-maincontent">
-						<div id="product_container" class="product-container clear">
-							<div class="seckill_time2">
-								<s class="zijt"></s>
-								<span class="buy_num fr">
-						            <b class="seckiil_soldnums">0</b>人已购买，下手要快哦！
-						        </span>
-						        <div class="fl">
-						        	<i class="icon-time"></i>
-						        	<span class="now_start_end_time_msg">已结束</span>
-						        </div>
-							</div>
-							<form class="clear">
-								<!--产品详情图片-->
-								<div class="product-side fl">
-									<i class="sidecount itips"><b>4</b></i>
-									<!--商品相册-->
-									<div id="product_album" class="product-album">
-										<div class="product-preview clear">
-											<div class="product-pic">
-												<a class="product-pica">
-													<img class="small-pic" src="../html/img-detail/detail-zhu01.jpg" data-big="../html/img-detail/detailda01.jpg" /> <!--大图-->
-													<!--<div class="album-zooms-handle"></div>-->
-												</a>
-											</div>
-											<div class="product-album-zoom">
-												<a href="" title="点击查看大图" target="_blank" class="icon"><i class="icon-search"></i></a>
-											</div>
-										</div>
-										<dl class="product-tips cld">
-											<dd><img src="../html/img-list/hanguoimg.png" alt="韩国品牌">   韩国品牌	</dd>
-											<dd><img src="../html/img-detail/hot-sale.png" alt="热卖中">热卖中</dd>
-											<dd><img src="../html/img-detail/good-reputation.png" alt="热卖中">好评中</dd>
-										</dl>
-										<div class="product-thumb">
-											<div class="flip prev forward over"><a href="" class="icon"><i class="icon-caret-left"></i></a></div>
-											<div class="thumbnail-list"><!--小图-->
-										      	<ul style="width: 542px; margin-left: 0px;" class="clear" id="ull">
-										            <li class="active">
-										            	<img class="xt" src="../html/img-detail/detail-zhu01.jpg" data-big="../html/img-detail/detailda01.jpg" alt="金丝燕窝深层保湿面膜" height="60" width="60">
-										          	</li>
-										            <li class="">
-											            <img class="xt" src="../html/img-detail/detail-zhu02.jpg" data-big="../html/img-detail/detailda02.jpg" alt="金丝燕窝深层保湿面膜" height="60" width="60">
-										          	</li>
-										            <li class="">
-											          	<img class="xt" src="../html/img-detail/detail-zhu03.jpg" data-big="../html/img-detail/detailda03.jpg" alt="金丝燕窝深层保湿面膜" height="60" width="60">
-										            <li class="">
-											            <img class="xt" src="../html/img-detail/detail-zhu04.jpg" data-big="../html/img-detail/detailda04.jpg" alt="金丝燕窝深层保湿面膜" height="60" width="60">
-										            </li>
-										             <li class="">
-											           	<img class="xt" src="../html/img-detail/detail-zhu05.jpg" alt="金丝燕窝深层保湿面膜" height="60" width="60">
-										             </li>
-										        </ul>
-										    </div>
-											<div class="flip next backward "><a href="" class="icon"><i class="icon-caret-right"></i></a></div>
-										</div>
-									</div>
-								</div>
-								
-								<div class="product-main fr">
-									<div id="bondedBanner" class="bonded-banner">
-										<span class="bonded_words_show">
-											<img alt="保税仓直送" src="../html/img-detail/tax-free_banner.jpg">
-										</span>
-									</div>
-									<!--标题简介-->
-									<div class="product-titles">
-	           				 			<i class="icon-quote-left"></i>
-	            						SNP 金丝燕窝深层保湿面膜含有高浓缩燕窝原液，集中供给皮肤水分锁水能力突出，在皮肤水分子表面形成保护膜防止水分快速流失。        
-									</div>
-									<div class="product-line">
-										<p class="product-titles2">
-                                			<b class="yew bonded_words_show">[保税仓直送]</b>
-											<a href="/brand/snp" target="_blank">SNP&nbsp;</a> 
-											精华面膜系列            
-										</p>
-										<p class="product-titles2">金丝燕窝深层保湿面膜&nbsp;(10片)&nbsp;</p>
-										<div class="product-information">
-											<!--购买区-->
-											<div class="product-buy">
-												<div class="product-action">
-													<ul>
-														<!--商品库存-->
-														<li class="product-buy-quantity">
-															<label class="item-label" for="for_quantity_input">数量：</label>
-															<span class="item-content">
-															    <span class="p-quantity">
-															    	<a href="" class="btn-decrease">-</a>
-															    	<input name="goods[num]" id="for_quantity_input" class="action-quantity-input" value="1" min="1" max="" type="text">
-															    	<a href="javascript:void(0);" class="btn-increase">+</a>
-															    </span>
-															    <span class="p-store"></span>
-															    <input name="stock" value="" type="hidden">
-															</span>
-														</li>
-														<!--价格显示区-->
-														<div class="product-concerns">
-															<span>特卖价</span>  &nbsp;  <del>市场价</del>
-														</div>
-														<!--购买按钮-->
-														<li class="product-buy-action">
-															<span class="js">抢购已结束</span>
-															<span class="code-pro pop-wrapper action-scanbuy">
-        														<button type="button" class="btn action-handle">扫扫即加入购物车  <i class="icon icon-qrcode"></i> &nbsp;  <i class="icon-caret-down"></i></button>
-        														<div class="pop-body" >
-         											 				<img src="../html/img-detail/job.png" alt="商品二维码" height="196" width="196">
-        														</div>
-    						 					 			</span>
-														</li>
-													</ul>
-												</div>
-											</div>
-											<!--商品评分-->
-											<div class="seckill-score clb">
-												<span>评分</span>
-												<i class="icon-star"></i>
-												<i class="icon-star"></i>
-												<i class="icon-star"></i>
-												<i class="icon-star"></i>
-												<i class="icon-star"></i>
-												<span>(887人评价)</span>
-											</div>
-											<!--分享推荐收藏-->
-											<div class="product-share">
-												<div class="share fr">
-												    <span class="fl">分享到</span>
-												    <ul class="share-mini">
-												        <li>
-												        	<a href="#"><i class="icon"></i> </a>
-												        </li>
-												        <li>
-												        	<a href="#"><i class="icon a2"></i> </a>
-												        </li>
-												        <li>
-												        	<a href="#"><i class="icon a3"></i> </a>
-												        </li>
-												        <li>
-												        	<a href="#"><i class="icon a4"></i> </a>
-												        </li>
-												        <li>
-												        	<a href="#"><i class="icon a5"></i> </a>
-												        </li>
-												        <li>
-												        	<a href="#"><i class="icon a6"></i> </a>
-												        </li>
-												    </ul>
-												</div>
-												<a href="" class="btn btn-rounded btn-addfav fl"><i class="icon-heart-empty"></i>   <i class="text">收藏</i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-							</form>
-						</div>
-					</div>
-					
-						
-					<!--精选优惠-->
-					<div class="prode-left lsidebar">
-						<div class="mboxDefault"></div>
-						<div class="">
-							<div class="gray-box m">
-								<div class="gray-title">浏览记录</div>
-								<div class="gray-content">
-									<div class="product-list">
-										<li class="product-item">
-											<a><img src="../html/img-detail/jl01.jpg" /> </a>
-											<div class="prode-info">
-												<div class="prode-name">
-													<b class="yew">[保税仓直送]</b>
-													SNP 精华面膜系列 金丝燕窝深层	
-												</div>
-												<div class="product-price">￥68.0<del class="grey f12 ml10">￥68.0</del></div>
-											</div>
-										</li>
-										<li class="product-item">
-											<a><img src="../html/img-detail/jl02.jpg" /> </a>
-											<div class="prode-info">
-												<div class="prode-name">
-													<b class="yew">[保税仓直送]</b>
-													GUERISSON 奇迹马	
-												</div>
-												<div class="product-price">￥79.0<del class="grey f12 ml10">￥89.0</del></div>
-											</div>
-										</li>
-										<li class="product-item">
-											<a><img src="../html/img-detail/jl03.jpg" /> </a>
-											<div class="prode-info">
-												<div class="prode-name">
-													<b class="yew">[保税仓直送]</b>
-													JayJun 补水保湿三部曲水光面膜 	
-												</div>
-												<div class="product-price">￥105.0<del class="grey f12 ml10">￥126.0</del></div>
-											</div>
-										</li>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-					
-					<!--商品详情 评论 咨询-->
-					<div class="pro-maincont fr">
-						<div style="height: 76px;">
-							<!--顶部悬停-->
-							<div id="xuanting" class="product-tags clear ss">
-								<div id="js-tags-hd-parameters" class="tags-hd active">
-									<a href="">商品参数</a>
-								</div>
-								<div id="js-tags-hd-parameters" class="tags-hd">
-									<a href="">商品详情</a>
-								</div>
-								<div id="js-tags-hd-parameters" class="tags-hd">
-									<a href="">商品实拍</a>
-								</div>
-								<div id="js-tags-hd-parameters" class="tags-hd">
-									<a href="">用户评价</a>
-								</div>
-								<div class="tags-addtocart">
-									<b class="price f24 action-price fl">￥68.0</b>
-									<a class="btn">加入购物车</a>
-								</div>
-							</div>
-						</div>
-						<div class="clb">
-							<!--商品参数-->
-							<div class="product-section">
-								<div class="product-attributes mod">
-									<div class="mod-title">
-          								<div class="mod-title-text">商品参数</div>
-  									</div>
-									<ul class="clear">
-										<!--固定参数-->
-										<li><span>商品编号：</span><div class="attributes-cont">000001077982</div></li>
-										<li><span>商品品牌：</span><div class="attributes-cont">SNP</div></li>
-										<li><span>商品系列：</span><div class="attributes-cont">精华面膜系列</div></li>
-										<li><span>商品名称：</span><div class="attributes-cont">金丝燕窝深层保湿面膜</div></li>
-										<li><span>商品规格：</span><div class="attributes-cont">10片</div></li>
-										<li><span>原产国家：</span><div class="attributes-cont">韩国（具体产地以收到实物为准）</div></li>
-									</ul>
-								</div>
-							</div>
-							<!--商品详情-->
-							<div class="product-detail">
-								<div class="pro-detailarea">
-									<div class="mod-title">
-         								<div class="mod-title-text">商品详情</div>
-     								</div>
-     								<div class="article-main">
-     									<img src="../html/img-detail/detailimg.jpg" />
-     									<p><font face="Tahoma" size="2"><strong>使用方法</strong></font></p>
-     									<img src="../html/img-detail/papermask.jpg" />
-     								</div>
-								</div>
-							</div>
-							<!--商品实拍-->
-							<div class="product-pics">
-								<div class="detail-content mod">
-									<div class="mod-title">
-          								<div class="mod-title-text">商品实拍</div>
-     								</div>
-     								<div class="detailarea-content">
-     									<div style="width: 100%;">
-     										<div style="margin: 0px auto;">
-     											<div style="text-align: center;">
-     												<img src="../html/img-detail/slide_snp_01.jpg" />
-     												<img src="../html/img-detail/slide_snp_02.jpg" />
-     												<img src="../html/img-detail/slide_snp_03.jpg" />
-     												<img src="../html/img-detail/slide_snp_04.jpg" />
-     												<img src="../html/img-detail/slide_snp_05.jpg" />
-     											</div>
-     											<div style="text-align: center;"> </div>
-     										</div>
-     									</div>
-     								</div>
-								</div>
-							</div>
-							<!--用户评价-->
-							
-							
-							
-							
-							
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--main结束-->
+			
 			
 			
 			

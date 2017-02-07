@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta charset="UTF-8">
 		<title>面部护肤-列表页</title>
@@ -12,6 +11,7 @@
 		<script src="../js/bootstrap.min.js"></script>
 		<script src="../js/index-jq.js"></script>
 		<script src="../js/fase-list-jq.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
 	</head>
 
 	<body>
@@ -25,9 +25,9 @@
 					<div class="login-bar">
 						<span id="loginBar" style="display: block;">
 							<span>欢迎光临沙沙网！</span>
-							<a href="#" style="margin-left: 10px;">登录</a>
+							<a href="../login.html" style="margin-left: 10px;">登录</a>
 							<span class="dividing">或</span>
-							<a href="#">免费注册</a>
+							<a href="../html/register.html">免费注册</a>
 						</span>
 					</div>
 					<!--我的账户-->
@@ -52,7 +52,7 @@
 							<li class="noline">
 								<div id="mini">
 									<div class="js_minicart-title tc">
-    									<a href="#"  class="white">
+    									<a href="../shopping-cart.html"  class="white">
     										<i class="icon-shopping-cart"></i>
     										我的购物车
     									</a>
@@ -726,8 +726,10 @@
 						<div id="gallery_show" class="garry-show clb">
 							<ul class="arrivalslist">
 								
+								
 							</ul>
 						</div>
+						<div id="page"></div>
 					</div>
 				</div>
 				<!--右边主体结束-->
@@ -863,7 +865,7 @@
 								</div>
 								<div class="sidecart">
 									<div class="sidecart-text">
-										<a><i class="icon-shopping-cart"></i>购物车</a>
+										<a href="../shopping-cart.html"><i class="icon-shopping-cart"></i>购物车</a>
 										<b><span id="js_cartnum">0</span></b>
 									</div>
 									<div class="sidecart-cont">

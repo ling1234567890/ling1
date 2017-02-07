@@ -10,7 +10,8 @@
 		"zimu":"SNP",
 		"name":"精华面膜系列        金丝燕窝深层保湿面膜 ",
 		"count":"10片",
-		"Sold_Out":"已售27件"
+		"Sold_Out":"已售27件",
+		"tianjia":"添加到购物车"
 		
 	},
 	{
@@ -24,7 +25,8 @@
 		"zimu":"PAPA RECIPE",
 		"name":"面膜系列   春雨蜂蜜面膜  ",
 		"count":"10片",
-		"Sold_Out":"已售16件"
+		"Sold_Out":"已售16件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list003.jpg",
@@ -37,7 +39,8 @@
 		"zimu":"SK-II",
 		"name":"护肤精华露(神仙水)  ",
 		"count":"330毫升",
-		"Sold_Out":"已售2件"
+		"Sold_Out":"已售2件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list004.jpg",
@@ -50,7 +53,8 @@
 		"zimu":"雅漾",
 		"name":"舒护活泉喷雾  ",
 		"count":"300毫升",
-		"Sold_Out":"已售13件"
+		"Sold_Out":"已售13件",
+		"tianjia":"添加到购物车"
 		
 	},
 	{
@@ -64,7 +68,8 @@
 		"zimu":"伊丽莎白 · 雅顿",
 		"name":"金致系列   金致眼部胶囊精华液  ",
 		"count":"60粒",
-		"Sold_Out":"已售11件"
+		"Sold_Out":"已售11件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list006.jpg",
@@ -77,7 +82,8 @@
 		"zimu":"倩碧",
 		"name":"护肤三部曲   卓越润肤乳(天才黄油+) ",
 		"count":"125毫升",
-		"Sold_Out":"已售6件"
+		"Sold_Out":"已售6件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list007.jpg",
@@ -90,7 +96,8 @@
 		"zimu":"伊丽莎白 · 雅顿",
 		"name":"时空系列   金装时空修护胶囊  ",
 		"count":"60粒",
-		"Sold_Out":"已售19件"
+		"Sold_Out":"已售19件",
+		"tianjia":"添加到购物车"
 		
 	},
 	{
@@ -104,7 +111,8 @@
 		"zimu":"SK-II",
 		"name":"护肤精华露(神仙水)   ",
 		"count":"250毫升",
-		"Sold_Out":"已售6件"
+		"Sold_Out":"已售6件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list009.jpg",
@@ -117,7 +125,8 @@
 		"zimu":"SK-II",
 		"name":"护肤精华露(神仙水) 小样 ",
 		"count":"30毫升",
-		"Sold_Out":"已售7件"
+		"Sold_Out":"已售7件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list010.jpg",
@@ -130,7 +139,8 @@
 		"zimu":"MVSK",
 		"name":"黄金羊胎素再生精华   ",
 		"count":"5毫升x4支  ",
-		"Sold_Out":"已售8件"
+		"Sold_Out":"已售8件",
+		"tianjia":"添加到购物车"
 		
 	},
 	{
@@ -144,7 +154,8 @@
 		"zimu":"贝德玛",
 		"name":"舒妍修护系列   舒妍多效洁肤液  ",
 		"count":"500毫升",
-		"Sold_Out":"已售7件"
+		"Sold_Out":"已售7件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list012.jpg",
@@ -157,7 +168,8 @@
 		"zimu":"兰蔻",
 		"name":"小黑瓶精华肌底液 升级版 ",
 		"count":"100毫升",
-		"Sold_Out":"已售1件"
+		"Sold_Out":"已售1件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list013.jpg",
@@ -170,7 +182,8 @@
 		"zimu":"兰蔻",
 		"name":"清滢柔肤水(粉水)    ",
 		"count":"200毫升",
-		"Sold_Out":"已售21件"
+		"Sold_Out":"已售21件",
+		"tianjia":"添加到购物车"
 		
 	},
 	{
@@ -184,7 +197,8 @@
 		"zimu":"雅诗兰黛",
 		"name":"ANR修护系列   肌透修护眼部精华霜(小棕瓶眼霜) 2014版   ",
 		"count":"15毫升",
-		"Sold_Out":"已售7件"
+		"Sold_Out":"已售7件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list015.jpg",
@@ -197,7 +211,8 @@
 		"zimu":"科颜氏",
 		"name":"牛油果保湿眼霜  ",
 		"count":"28克",
-		"Sold_Out":"已售2件"
+		"Sold_Out":"已售2件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list016.jpg",
@@ -210,7 +225,8 @@
 		"zimu":" Dr. Jart+",
 		"name":"V7多元维他命再生透白系列   V7维生素焕颜亮白霜 ",
 		"count":"50毫升",
-		"Sold_Out":"已售5件"
+		"Sold_Out":"已售5件",
+		"tianjia":"添加到购物车"
 		
 	},
 	{
@@ -224,7 +240,8 @@
 		"zimu":"希思黎",
 		"name":"全能乳液  ",
 		"count":"125毫升",
-		"Sold_Out":"已售2件"
+		"Sold_Out":"已售2件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list018.jpg",
@@ -237,7 +254,8 @@
 		"zimu":"雅诗兰黛",
 		"name":"ANR修护系列   特润修护肌透精华露(小棕瓶) 第六代   ",
 		"count":"100毫升",
-		"Sold_Out":"已售4件"
+		"Sold_Out":"已售4件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list019.jpg",
@@ -250,7 +268,8 @@
 		"zimu":"雅诗兰黛",
 		"name":"ANR修护系列   特润修护肌透精华露(小棕瓶) 第六代  ",
 		"count":"50毫升",
-		"Sold_Out":"已售7件"
+		"Sold_Out":"已售7件",
+		"tianjia":"添加到购物车"
 		
 	},
 	{
@@ -264,7 +283,8 @@
 		"zimu":"兰蔻",
 		"name":"小黑瓶精华肌底液 升级版  ",
 		"count":"50毫升",
-		"Sold_Out":"已售3件"
+		"Sold_Out":"已售3件",
+		"tianjia":"添加到购物车"
 	},
 	{
 		"man_img":"img-list/list021.jpg",
@@ -277,7 +297,8 @@
 		"zimu":"赫莲娜",
 		"name":"悦活新生系列   悦活新生精华  ",
 		"count":"75毫升",
-		"Sold_Out":"已售1件"
+		"Sold_Out":"已售1件",
+		"tianjia":"添加到购物车"
 	}
 	
 ]

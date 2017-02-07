@@ -492,6 +492,25 @@
                                         padding-top: 5px;
                                     }
                                 }
+                                .sp{
+                                    
+                                    width: 100px;
+                                    height: 35px;
+                                    line-height: 35px;
+                                    text-align: center;
+                                    float: right;
+                                    button{
+                                        width: 100px;
+                                        height: 35px;
+                                        line-height: 35px;
+                                        text-align: center;
+                                        border-radius: 5px;
+                                        background-color: #EC3E7D;
+                                        outline: none;
+                                        border-color:#EC3E7D ;
+                                        color: #fff;
+                                    }
+                                }
                             }
                             .time{
                                 position: absolute;
@@ -516,6 +535,14 @@
                     }
                 }
                 .clb{clear: both;}
+                #page{
+                    span{
+                        display:inline-block;margin:5px;width:40px;line-height:1.8;text-align: center;background-color:#dfdfdf;color:#666;
+                    }
+                    .active{
+                        background-color:#fc0;color:#fff;
+                    }
+                }
             }
         }
         //右边主体结束 

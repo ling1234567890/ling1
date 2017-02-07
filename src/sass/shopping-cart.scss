@@ -1,0 +1,66 @@
+//框架：最外围的div
+.index-page{
+    .fr{float: right;}
+    .topcartion{
+        padding-top: 30px;
+        width: 235px;
+        overflow: hidden;
+        img{max-height: 62px;max-width: 235px;}
+    }
+    .topcart-step01{background-position: 0px 0px;}
+    .topcart-step{
+        width: 472px;
+        height: 62px;
+        float: left;
+        margin: 10px 0px 0px 280px;
+        background:url(../img/cartstep.png)no-repeat scroll 0% 0% transparent;
+        overflow: hidden;
+    }
+    .page{
+        width: 1090px;
+        margin: 0px auto;
+        .amsll-page{
+            width: 958px;
+            margin: 0px auto;
+            .cart-empty{
+                background-color: #FFF;
+                text-align: center;
+                padding: 80px 0px 90px;
+                font-size: 14px;
+                line-height: 2;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                position: relative;
+                #mycart{
+                    li{
+                        width: 800px;
+                        height: 200px;
+                        border-bottom: 1px dashed #959595;position:relative;
+                        a{
+                            font-size: 14px;position: absolute;top: 10px;left: 300px;color: #3e3e3e;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                        img{width: 180px;height: 180px;position: absolute;left: 10px;top: 5px;}
+                        .Price{top: 50px;left: 100px;position: absolute;color: orangered;}
+                        .dele{top: 50px;right: 10px;position: absolute;color: orangered;cursor: pointer;}
+                        #tab{width:150px;height: 20px;position: absolute;top: 50px;left: 250px;font-size: 20px;color: orangered;
+                            input{width: 20px;height: 20px;line-height: 20px;text-align: center;}
+                        }
+                        #total1{position: absolute;bottom:20px;left: 10px;font-size: 20px;color: red;}
+                    }
+                }
+                .fh{
+                    position: absolute;
+                    padding: 10px;
+                    top: 0px;
+                    right: 50px;
+                    background: #E3E3E3;
+                    border-radius: 2px;
+                    text-decoration: none;
+                    color: #3e3e3e;
+                }
+            }
+        }   
+    }
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" href="css/homepage.css">	
+		<link rel="stylesheet" href="css/shopping-cart.css">	
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/index-jq.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+	</head>
+
+	<body>
+		
+		<div class="index-page">
+			
+			<!--顶部开始-->
+			<div class="topbar">
+				<div class="page-rs clear">
+					<!--登录注册-->
+					<div class="login-bar">
+						<span id="loginBar" style="display: block;">
+							<span>欢迎光临沙沙网！</span>
+							<a href="login.html" style="margin-left: 10px;">登录</a>
+							<span class="dividing">或</span>
+							<a href="register.html">免费注册</a>
+						</span>
+					</div>
+					<!--我的账户-->
+					<div class="member-link">
+						<ul>
+							<li class="noline" id="one_li">
+								<div id="mem">
+									<a href="#" rel="nofollow">
+										<i class="icon-user"></i>
+										我的账户
+										<i class="icon-angle-down"></i>
+									</a>
+								</div>
+								<div id="mem_d1" >
+									<dd><a href="#" rel="nofollow">我的订单</a></dd>
+									<dd><a href="#" rel="nofollow">我的积分</a></dd>
+									<dd><a href="#" rel="nofollow">我的优惠券</a></dd>
+									<dd><a href="#" rel="nofollow">我的收藏</a></dd>
+									<dd><a href="#"rel="nofollow">我的评价</a></dd>
+								</div>
+							</li>
+							<li class="noline">
+								<div id="mini">
+									<div class="js_minicart-title tc">
+    									<a href="#"  class="white">
+    										<i class="icon-shopping-cart"></i>
+    										我的购物车
+    									</a>
+  									</div>
+  									<div class="gwc_div">
+  										<div class="empty">购物车中还没有商品，<br>快去挑选心爱的商品吧</div>
+									</div>
+								</div>
+							</li>
+							<li class="noline">
+								<div class="member white">
+									<a href="#"  class="white">
+										<i class="icon-heart"></i>
+										我的收藏
+									</a>
+								</div>
+							</li>
+							<li class="noline">
+								<a rel="nofollow" href="#" class="white">我的站內信</a>
+							</li>
+							<li class="noline">
+								<a rel="nofollow" href="#" class="white">积分中心</a>
+							</li>
+							<li class="noline">
+								<a rel="nofollow" href="#" class="white">Global site</a>
+							</li>
+							<li class="noline">
+								<div class="member_attention">
+									<a rel="nofollow" href="#" class="white">
+										关于我们
+										<img src="img/heade-wb.png"  alt="沙沙微博" id="sha_wb"/>
+										<img src="img/heade-wx.png" alt="沙沙微信" id="sha_wx"/>
+										<div class="heade-wb"><img src="img/heade_wb.jpg" /> </div>
+										<div class="heade-wx"><img src="img/heade-wx.jpg" /> </div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--顶部开结束-->
+			
+			<!--header-main开始-->
+			<div class="header-main">
+				<div class="page-rs clear"><br />
+					<div class="topcartion fr">
+						<div>
+							<img src="img/gw01.png" />
+							<img src="img/gw02.png" />
+							<img src="img/gw03.png" />
+						</div>
+					</div>
+					<div class="topcart-step01 topcart-step"></div>
+					<!--logo-->
+					<div class="logo"><a href="#"><img src="img/logo.png" /> </a> </div>
+				</div>
+			</div>
+			<!--header-main结束-->
+			
+			
+			<div class="page">
+				<div class="ui-cart-body">
+					<div class="amsll-page">
+						<div class="cart-empty clear">
+							<ul id="mycart">
+								<!--<img src="html/img-list/list001.jpg" />-->
+							<ul/>
+							<a href="index.html" class="fh">回到首页</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			<!--配送方式、付款方式   开始-->
+			<div class="footer-rs floor">
+				<div class="helper">
+					<!--满XX包邮开始-->
+					<div class="sasa_promise clear">
+						<div class="sasa_promise_item sasa_promise_item_0">
+							<div class="sasa_promise_img sasa_promise_img0"></div>
+							<div class="sasa_promise_content">
+								<p class="sasa_promise_title">满￥249包邮</p>
+								<p class="sasa_promise_subtit">全球采购 海淘so easy</p>
+							</div>
+						</div>
+						<div class="sasa_promise_item sasa_promise_item_1">
+							<div class="sasa_promise_img sasa_promise_img1"></div>
+							<div class="sasa_promise_content">
+								<p class="sasa_promise_title">正品保证</p>
+								<p class="sasa_promise_subtit">专注美妆护肤38年</p>
+							</div>
+						</div>
+						<div class="sasa_promise_item sasa_promise_item_2">
+							<div class="sasa_promise_img sasa_promise_img2"> </div>
+							<div class="sasa_promise_content">
+					            <p class="sasa_promise_title">香港直邮</p>
+					            <p class="sasa_promise_subtit">香港直发 美丽到家</p>
+					        </div>
+						</div>
+						<div class="sasa_promise_item sasa_promise_item_3">
+							<div class="sasa_promise_img sasa_promise_img3"> </div>
+							<div class="sasa_promise_content">
+					            <p class="sasa_promise_title">30天退换保证</p>
+					            <p class="sasa_promise_subtit">为您提供售后无忧保障</p>
+					        </div>
+						</div>
+						<div class="sasa_promise_item sasa_promise_item_4">
+							<div class="sasa_promise_img sasa_promise_img4"> </div>
+							<div class="sasa_promise_content">
+					            <p class="sasa_promise_title">香港上市</p>
+					            <p class="sasa_promise_subtit">股票代码: HK00178</p>
+					        </div>
+						</div>
+					</div>
+					<!--满XX包邮结束-->
+					<div class="page-rs clear">
+						<!--左边开始-->
+						<div class="footer_left clear">
+							<div class="clear">
+								<div class="btom-info"> </div>
+								<div class="helper-item">
+									<div class="helper-item-rs">
+										<ul>
+											<li id="helper-item_ul_lastli"><a href="#"> 新手上路</a> </li>
+											<li><a href="#"> 购物流程</a> </li>
+											<li><a href="#"> 优惠券说明</a> </li>
+											<li><a href="#"> 常见问题</a> </li>
+											<li><a href="#"> 联系我们</a> </li>
+										</ul>
+									</div>
+									<div class="helper-item-rs">
+										<ul>
+											<li id="helper-item_ul_lastli"><a href="#"> 付款方式</a> </li>
+											<li><a href="#"> 在线支付</a> </li>
+											<li><a href="#"> 积分支付</a> </li>
+										</ul>
+									</div>
+									<div class="helper-item-rs">
+										<ul>
+											<li id="helper-item_ul_lastli"><a href="#"> 配送方式</a> </li>
+											<li><a href="#"> 配送说明</a> </li>
+											<li><a href="#"> 追踪订单</a> </li>
+										</ul>
+									</div>
+									<div class="helper-item-rs">
+										<ul>
+											<li id="helper-item_ul_lastli"><a href="#">售后服务</a> </li>
+											<li><a href="#"> 正品保证</a> </li>
+											<li><a href="#"> 价格承诺</a> </li>
+											<li><a href="#"> 30天退换保证</a> </li>
+											<li><a href="#"> 退款程序</a> </li>
+											<li><a href="#"> 更改订单</a> </li>
+										</ul>
+									</div>
+									<div class="helper-item-rs">
+										<ul>
+											<li id="helper-item_ul_lastli"><a href="#"> 沙沙会员</a> </li>
+											<li><a href="#"> 积分奖赏</a> </li>
+											<li><a href="#"> VIP会员计划</a> </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="clear"><a href="#"><img src="img/foot-img.jpg" /></a></div>
+						</div>
+						<!--左边结束-->
+						<!--右边开始-->
+						<div class="footer_right clear">
+							<div class="btom-code">
+								<img src="img/heade-wx.jpg" />
+								<p class="btom-code-wx">沙沙网官方微信</p>
+								<p class="btom-code-wxid">ID:hksasadotcom</p>
+							</div>
+							<div class="btom-code">
+								<img src="img/heade_wb.jpg" />
+								<p class="btom-code-wx">沙沙网官方微博</p>
+								<p class="btom-code-wxid">@沙沙网</p>
+							</div>
+						</div>
+						<!--右边结束-->
+					</div>
+					
+					<!--右侧边栏开始-->
+					<div class="sidebar">
+						<div class="sidebar-box">
+							<div class="box-one">
+								<div class="sidebars-explain">
+									<a href="#" target="_blank">选购境外商品需知</a>
+								</div>
+								<div class="sidecarts-w-h"></div>
+								<div style="" class="mui-mbar-tab" >
+									<a class="sidebar-link" href="#"><i class="icon-user" style="color:#C69A62;"></i></a>
+									<a href="" class="mui-mbar-tab-tip">
+										我的账户
+										<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div>
+									</a>
+								</div>
+								<div class="sidecart">
+									<div class="sidecart-text">
+										<a href="shopping-cart.html"><i class="icon-shopping-cart"></i>购物车</a>
+										<b><span id="js_cartnum">0</span></b>
+									</div>
+									<div class="sidecart-cont">
+										<div class="cart-conttitle">
+											<button class="btn-close" id="js_closecart" title="关闭" type="button">
+												<i class="icon-remove-circle"></i>
+											</button>购物车
+										</div>
+										<div id="js_updatecart" class="J-updatecart">
+											<div class="no-information ui-sidecart-empty">购物车中还没有商品，赶紧选购吧！</div>
+										</div>
+									</div>
+								</div>
+								<div style="" class="mui-mbar-tab" >
+									<a class="sidebar-link" href="#"><i class="icon-heart" style="color:#C69A62;"></i></a>
+									<a href="" class="mui-mbar-tab-tip">
+										收藏
+										<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div>
+									</a>
+								</div>
+								<div style="" class="mui-mbar-tab" >
+									<a class="sidebar-link" href="#"><i class="icon-refresh" style="color:#C69A62 ;"></i></a>
+									<a href="" class="mui-mbar-tab-tip">
+										浏览记录
+										<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div>
+									</a>
+								</div>
+								<div style="" class="mui-mbar-tab" >
+									<a class="sidebar-link" href="#"><i class="icon-comments-alt" style="color: #C69A62;"></i></a>
+									<a href="" class="mui-mbar-tab-tip">
+										线上客服
+										<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div>
+									</a>
+								</div>
+								<div style="" class="mui-mbar-tab mbar_top" >
+									<a class="sidebar-link" href="#">
+										<i class="icon-caret-up" style="color: #C69A62;"></i>
+										TOP
+									</a>
+								</div>
+							</div>
+							<div class="box-two"></div>
+						</div>
+					</div>
+					<!--右侧边栏结束-->
+					
+				</div>
+			</div>
+			<!--配送方式、付款方式   结束-->
+			
+			<!--底部开始-->
+			<div class="footer_link">
+				<div class="footer_link_inner">
+					<div class="footer_linkboard">
+						<a href="#"> 关于沙沙</a>
+						<a href="#"> 使用条款</a>
+						<a href="#"> 隐私策略</a>
+						<a href="#"> 批发服务</a>
+						<a href="#"> 招商合作</a>
+						<a href="#"> 帮助中心</a>
+						<a href="#"> 港澳店铺推广</a>
+						<a href="#"> 人才招聘</a>
+						<a href="#"> 联系我们</a>
+						<a href="#"> 其他送货地区</a>
+					</div>
+					<div class="footer__copyright"> Copyright 2000-2016 Sa Sa dot Com Limited  版权所有莎莎国际控股有限公司成员</div>
+				</div>
+			</div>
+			<!--底部结束-->
+		</div>
+		
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
