@@ -665,18 +665,3 @@ a {
 .index-page .page .right-main .filter-mod .clb {
   clear: both;
 }
-
-.index-page .page .right-main .filter-mod #page span {
-  display: inline-block;
-  margin: 5px;
-  width: 40px;
-  line-height: 1.8;
-  text-align: center;
-  background-color: #dfdfdf;
-  color: #666;
-}
-
-.index-page .page .right-main .filter-mod #page .active {
-  background-color: #fc0;
-  color: #fff;
-}

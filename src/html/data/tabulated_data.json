@@ -299,6 +299,77 @@
 		"count":"75毫升",
 		"Sold_Out":"已售1件",
 		"tianjia":"添加到购物车"
+	},
+	{
+		"man_img":"img-list/list017.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥899.0",
+		"original_price":"￥162.0",
+		"discount":"5.5折",
+		"direct_sending":"",
+		"zimu":"希思黎",
+		"name":"全能乳液  ",
+		"count":"125毫升",
+		"Sold_Out":"已售2件",
+		"tianjia":"添加到购物车"
+	},
+	{
+		"man_img":"img-list/list018.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥928.0",
+		"original_price":"￥1900.0",
+		"discount":"4.9折",
+		"direct_sending":"",
+		"zimu":"雅诗兰黛",
+		"name":"ANR修护系列   特润修护肌透精华露(小棕瓶) 第六代   ",
+		"count":"100毫升",
+		"Sold_Out":"已售4件",
+		"tianjia":"添加到购物车"
+	},
+	{
+		"man_img":"img-list/list019.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥499.0",
+		"original_price":"￥850.0",
+		"discount":"5.9折",
+		"direct_sending":"[保税仓直送]",
+		"zimu":"雅诗兰黛",
+		"name":"ANR修护系列   特润修护肌透精华露(小棕瓶) 第六代  ",
+		"count":"50毫升",
+		"Sold_Out":"已售7件",
+		"tianjia":"添加到购物车"
+		
+	},
+	{
+		"man_img":"img-list/list020.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥499.0",
+		"original_price":"￥1080.0",
+		"discount":"4.6折",
+		"direct_sending":"[保税仓直送]",
+		"zimu":"兰蔻",
+		"name":"小黑瓶精华肌底液 升级版  ",
+		"count":"50毫升",
+		"Sold_Out":"已售3件",
+		"tianjia":"添加到购物车"
+	},
+	{
+		"man_img":"img-list/list021.jpg",
+		"guojia":"欧美品牌",
+		"guoqi":"img-list/oumeiimg.png",
+		"current_price":"￥850.0",
+		"original_price":"￥1180.0",
+		"discount":"7.3折",
+		"direct_sending":"",
+		"zimu":"赫莲娜",
+		"name":"悦活新生系列   悦活新生精华  ",
+		"count":"75毫升",
+		"Sold_Out":"已售1件",
+		"tianjia":"添加到购物车"
 	}
 	
 ]

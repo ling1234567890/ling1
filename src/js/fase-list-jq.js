@@ -108,114 +108,114 @@ $(function() {
 	
 	
 	//列表
-	function tabulated_data(){
-		$.ajax({
-			type:"get",
-			url:"../html/data/tabulated_data.json",
-			dataType: 'json', //数据类型 
-			success:function(data){
-				console.log(data)
-//				创建一个ul
-				var $datalist = $('.garry-show').html('');
-				var $page = $('#page');
-				var $ul = $('<ul/>').addClass('arrivalslist').appendTo($datalist);
-					$.each(data, function(index1,values) {
-	//				for(var i=0; i<9 && i<data.length; i++){
-						var $li = $('<li/>').addClass('clear').appendTo('.arrivalslist');
-						var $div1 = $('<div/>').addClass('formall').appendTo($li);
-						var $div2 = $('<div/>').addClass('formallcont').addClass('clear').appendTo($div1);
-						var $div3 = $('<div/>').addClass('arrivals-pic').addClass('clear').appendTo($div2);
-						var $dl = $('<dl/>').appendTo($div3).addClass('dl').addClass('clear');
-						//国家品牌
-						var $dd = $('<dd/>').appendTo($dl).addClass('dd').html(values.guojia);
-						//小图国旗
-						var $i = $('<i/>').addClass('icountry').appendTo($dd).html('<img src=' + values.guoqi +'/>');
-						//大图商品
-						var $a = $('<a/>').appendTo($div3).addClass('a').html('<img class="ccc" src=' + values.man_img +'/>');
-						//倒计时
-	//					var $p = $('<p/>').addClass('time').appendTo($li).html('<i class="icon-time"></i> 剩余 <span class="day"></span> 天 <span class="hour"></span> 时 <span class="minute"></span> 分<span class="second"></span>秒 ');
-						var $div_price = $('<div/>').addClass('sale-price ').addClass('clear').appendTo($div2);
-						//现价
-						var $div_pricesp1 = $('<span/>').addClass('price').html(values.current_price).appendTo($div_price);
-						//原价
-						var $div_pricesp2 = $('<span/>').html('<del>'+ values.original_price +'<del/>').appendTo($div_price);
-						//折扣
-						var $div_pricesp3 = $('<span/>').addClass('count').html(values.discount).appendTo($div_price);
-						var $div_info= $('<div/>').addClass('arrivals-info').addClass('clear').appendTo($div2);
-						var $div_info1= $('<div/>').addClass('infoconts').addClass('clear').appendTo($div_info);
-						//保税仓直送
-						var $div_info1_01 = $('<div/>').addClass('des02 ').addClass('clear').appendTo($div_info1).html('<b class="yew">'+ values.direct_sending +'</b><a>' + values.zimu +'</a>');
-						//产品名字，系列
-						var $p_info_01 = $('<p/>').addClass('des03').appendTo($div_info1).html('<a>'+values.name +'</a>');
-						//数量
-						var $p_info_02 = $('<p/>').appendTo($div_info1).html('<a>'+values.count +'</a>');
-						//已售
-						var $p_info1= $('<p/>').addClass('salenum').addClass('clear').appendTo($div_info).html(values.Sold_Out);
-                        //添加购物车
-                        var $sp = $('<div/>').html('<button class="btngw">' + values.tianjia +'</button>').appendTo($div2).addClass('sp');
-						console.log(values.guojia)
-				    });
-				    
-				    
-				    //点击添加到购物车
-					$('.arrivalslist').on('click','.btngw',function(e){
-							console.log(111)	
-						 var title1 = $(e.target).parent().parent().children(".arrivals-info").children(".infoconts").find('.des03').html();//产品名称
-					
-						 //price
-						 var price =$(e.target).parent().parent().children(".sale-price ").find('.price').html();//产品价格
-				//					     console.log(price);
-						 //img
-						 var img =$(e.target).parent().parent().children(".arrivals-pic ").children("a").find('img').attr('src');//产品图片
-				//					
-						 var obj = {"title1":title1,"price":price,"img":img};
-						 console.log(obj);
-						 var strCookie =  $.cookie("good");    //strCookie 是存在cookie里面的产品信息	 
-						 console.log(strCookie);
-				//					
-						var  bGood = false;  //代表没有信息
-						if(strCookie == undefined || strCookie =="" || strCookie.length==0){
-				                 
-							
-							var oCookie = [];
-							var newGood = {"title1":title1,data:obj,num:1}//新的完整的产品信息
-							oCookie.push(newGood);
-				
-						}else{
-							 //有另外的产品信息，不是要添加的产品信息，所有要生成所添加的产品信息
-							var oCookie = JSON.parse(strCookie);
-						    
-							
-							$.each(oCookie,function(){
-								
-								if(this.title1 ==title1){
-									var num = parseInt(this.num)+1;  
-									this.num = num;
-									bGood =true  ;  //表示产品有信息
-								}
-							})
-						
-							
-							if(bGood==false){
-								//生成新的商品信息
-								var newGood = {"title1":title1,data:obj,num:1}//新的完整的产品信息
-								oCookie.push(newGood);
-							}
-						}
-						console.log(oCookie);		
-				//						//重新设置cookie
-						$.cookie("good",JSON.stringify(oCookie),{expires:7 , path:"/"});
-						console.log(oCookie);
-						console.log(JSON.stringify(oCookie));
-				//						
-						console.log($.cookie("good") );
-						
-						alert('添加成功');
-					})
-			}
-		});
-	};
-	tabulated_data();
+//	function tabulated_data(){
+//		$.ajax({
+//			type:"get",
+//			url:"../html/data/tabulated_data.json",
+//			dataType: 'json', //数据类型 
+//			success:function(data){
+//				console.log(data)
+////				创建一个ul
+////				var $datalist = $('.garry-show').html('');
+////				var $page = $('#page');
+////				var $ul = $('<ul/>').addClass('arrivalslist').appendTo($datalist);
+//					$.each(data, function(index1,values) {
+//	//				for(var i=0; i<9 && i<data.length; i++){
+//						var $li = $('<li/>').addClass('clear').appendTo('.arrivalslist');
+//						var $div1 = $('<div/>').addClass('formall').appendTo($li);
+//						var $div2 = $('<div/>').addClass('formallcont').addClass('clear').appendTo($div1);
+//						var $div3 = $('<div/>').addClass('arrivals-pic').addClass('clear').appendTo($div2);
+//						var $dl = $('<dl/>').appendTo($div3).addClass('dl').addClass('clear');
+//						//国家品牌
+//						var $dd = $('<dd/>').appendTo($dl).addClass('dd').html(values.guojia);
+//						//小图国旗
+//						var $i = $('<i/>').addClass('icountry').appendTo($dd).html('<img src=' + values.guoqi +'/>');
+//						//大图商品
+//						var $a = $('<a/>').appendTo($div3).addClass('a').html('<img class="ccc" src=' + values.man_img +'/>');
+//						//倒计时
+//	//					var $p = $('<p/>').addClass('time').appendTo($li).html('<i class="icon-time"></i> 剩余 <span class="day"></span> 天 <span class="hour"></span> 时 <span class="minute"></span> 分<span class="second"></span>秒 ');
+//						var $div_price = $('<div/>').addClass('sale-price ').addClass('clear').appendTo($div2);
+//						//现价
+//						var $div_pricesp1 = $('<span/>').addClass('price').html(values.current_price).appendTo($div_price);
+//						//原价
+//						var $div_pricesp2 = $('<span/>').html('<del>'+ values.original_price +'<del/>').appendTo($div_price);
+//						//折扣
+//						var $div_pricesp3 = $('<span/>').addClass('count').html(values.discount).appendTo($div_price);
+//						var $div_info= $('<div/>').addClass('arrivals-info').addClass('clear').appendTo($div2);
+//						var $div_info1= $('<div/>').addClass('infoconts').addClass('clear').appendTo($div_info);
+//						//保税仓直送
+//						var $div_info1_01 = $('<div/>').addClass('des02 ').addClass('clear').appendTo($div_info1).html('<b class="yew">'+ values.direct_sending +'</b><a>' + values.zimu +'</a>');
+//						//产品名字，系列
+//						var $p_info_01 = $('<p/>').addClass('des03').appendTo($div_info1).html('<a>'+values.name +'</a>');
+//						//数量
+//						var $p_info_02 = $('<p/>').appendTo($div_info1).html('<a>'+values.count +'</a>');
+//						//已售
+//						var $p_info1= $('<p/>').addClass('salenum').addClass('clear').appendTo($div_info).html(values.Sold_Out);
+//                      //添加购物车
+//                      var $sp = $('<div/>').html('<button class="btngw">' + values.tianjia +'</button>').appendTo($div2).addClass('sp');
+//						console.log(values.guojia)
+//				    });
+//				    
+//				    
+//				    //点击添加到购物车
+//					$('.arrivalslist').on('click','.btngw',function(e){
+//							console.log(111)	
+//						 var title1 = $(e.target).parent().parent().children(".arrivals-info").children(".infoconts").find('.des03').html();//产品名称
+//					
+//						 //price
+//						 var price =$(e.target).parent().parent().children(".sale-price ").find('.price').html();//产品价格
+//				//					     console.log(price);
+//						 //img
+//						 var img =$(e.target).parent().parent().children(".arrivals-pic ").children("a").find('img').attr('src');//产品图片
+//				//					
+//						 var obj = {"title1":title1,"price":price,"img":img};
+//						 console.log(obj);
+//						 var strCookie =  $.cookie("good");    //strCookie 是存在cookie里面的产品信息	 
+//						 console.log(strCookie);
+//				//					
+//						var  bGood = false;  //代表没有信息
+//						if(strCookie == undefined || strCookie =="" || strCookie.length==0){
+//				                 
+//							
+//							var oCookie = [];
+//							var newGood = {"title1":title1,data:obj,num:1}//新的完整的产品信息
+//							oCookie.push(newGood);
+//				
+//						}else{
+//							 //有另外的产品信息，不是要添加的产品信息，所有要生成所添加的产品信息
+//							var oCookie = JSON.parse(strCookie);
+//						    
+//							
+//							$.each(oCookie,function(){
+//								
+//								if(this.title1 ==title1){
+//									var num = parseInt(this.num)+1;  
+//									this.num = num;
+//									bGood =true  ;  //表示产品有信息
+//								}
+//							})
+//						
+//							
+//							if(bGood==false){
+//								//生成新的商品信息
+//								var newGood = {"title1":title1,data:obj,num:1}//新的完整的产品信息
+//								oCookie.push(newGood);
+//							}
+//						}
+//						console.log(oCookie);		
+//				//						//重新设置cookie
+//						$.cookie("good",JSON.stringify(oCookie),{expires:7 , path:"/"});
+//						console.log(oCookie);
+//						console.log(JSON.stringify(oCookie));
+//				//						
+//						console.log($.cookie("good") );
+//						
+//						alert('添加成功');
+//					})
+//			}
+//		});
+//	};
+//	tabulated_data();
 	
 //	
 
