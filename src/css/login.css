@@ -1,215 +1,75 @@
-body, h1, h2, h3, h4, h5, h6, p, form {
-  margin: 0px;
-}
+body, h1, h2, h3, h4, h5, h6, p, form { margin: 0px; }
 
-body {
-  font: 14px/22px "Microsoft Yahei",Helvetica,Arial,STXihei,SimSun,sans-serif;
-  color: #3E3E3E;
-}
+body { font: 14px/22px "Microsoft Yahei",Helvetica,Arial,STXihei,SimSun,sans-serif; color: #3E3E3E; }
 
-.clb {
-  clear: both;
-}
+.clb { clear: both; }
 
-ul {
-  list-style: none;
-}
+ul { list-style: none; }
 
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
 
-.page-rs {
-  width: 1200px;
-  margin: 0px auto;
-}
+.page-rs { width: 1200px; margin: 0px auto; }
 
-.clear {
-  zoom: 1;
-}
+.clear { zoom: 1; }
 
-.clear:after {
-  content: '';
-  display: block;
-  clear: both;
-}
+.clear:after { content: ''; display: block; clear: both; }
 
-.index-page {
-  background: #fff;
-}
+.index-page { background: #fff; }
 
-.index-page .page {
-  width: 1090px;
-  margin: 0px auto;
-}
+.index-page .page { width: 1090px; margin: 0px auto; }
 
-.index-page .page .signin-page-wrap {
-  margin-top: 40px;
-  background: url(../html/imgs/login.png) no-repeat;
-  z-index: 100;
-}
+.index-page .page .signin-page-wrap { margin-top: 40px; background: url(../html/imgs/login.png) no-repeat; z-index: 100; }
 
-.index-page .page .signin-page-wrap .fr {
-  float: right;
-}
+.index-page .page .signin-page-wrap .fr { float: right; }
 
-.index-page .page .signin-page-wrap .signin {
-  width: 420px;
-  padding: 35px;
-  margin-right: 68px;
-  box-shadow: 0px 0px 5px #E1E1E1, 0px 0px 15px #E1E1E1;
-}
+.index-page .page .signin-page-wrap .signin { width: 420px; padding: 35px; margin-right: 68px; box-shadow: 0px 0px 5px #E1E1E1, 0px 0px 15px #E1E1E1; }
 
-.index-page .page .signin-page-wrap .signin .sign-title {
-  margin-bottom: 10px;
-}
+.index-page .page .signin-page-wrap .signin .sign-title { margin-bottom: 10px; }
 
-.index-page .page .signin-page-wrap .signin .sign-title .sign-title-text {
-  font-family: "Microsoft Yahei";
-  color: #5A5D6C;
-  font-weight: normal;
-  font-size: 21px;
-}
+.index-page .page .signin-page-wrap .signin .sign-title .sign-title-text { font-family: "Microsoft Yahei"; color: #5A5D6C; font-weight: normal; font-size: 21px; }
 
-.index-page .page .signin-page-wrap .signin .sign-title .sign-title-text .fr {
-  float: right;
-}
+.index-page .page .signin-page-wrap .signin .sign-title .sign-title-text .fr { float: right; }
 
-.index-page .page .signin-page-wrap .signin .sign-title .sign-title-text span {
-  font-size: 12px;
-}
+.index-page .page .signin-page-wrap .signin .sign-title .sign-title-text span { font-size: 12px; }
 
-.index-page .page .signin-page-wrap .signin .sign-title .sign-title-text span a {
-  color: #EC3E7D;
-  margin-left: 3px;
-  margin-right: 3px;
-  text-decoration: none;
-}
+.index-page .page .signin-page-wrap .signin .sign-title .sign-title-text span a { color: #EC3E7D; margin-left: 3px; margin-right: 3px; text-decoration: none; }
 
-.index-page .page .signin-page-wrap .signin .signupbox {
-  margin-top: 40px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox { margin-top: 40px; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form {
-  margin: 0px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form { margin: 0px; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul {
-  padding: 0px;
-  margin: 0px;
-  list-style-type: none;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul { padding: 0px; margin: 0px; list-style-type: none; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul li {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul li { list-style-type: none; margin: 0px; padding: 0px; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item {
-  height: 51px;
-  font-size: 13px;
-  margin-bottom: 10px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item { height: 51px; font-size: 13px; margin-bottom: 10px; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act {
-  position: relative;
-  display: block;
-  line-height: 2.5em;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act { position: relative; display: block; line-height: 2.5em; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act input {
-  vertical-align: middle;
-  outline: medium none;
-  margin: 0px;
-  border-width: 1px;
-  border-color: #CCC;
-  font-size: 100%;
-  font-family: inherit;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act input { vertical-align: middle; outline: medium none; margin: 0px; border-width: 1px; border-color: #CCC; font-size: 100%; font-family: inherit; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act .x-input {
-  width: 300px;
-  border-style: solid;
-  height: 40px;
-  line-height: 40px;
-  padding: 4px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act .x-input { width: 300px; border-style: solid; height: 40px; line-height: 40px; padding: 4px; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act .icon-yhm {
-  background: url(../html/imgs/q.png) no-repeat scroll 6px -120px transparent;
-  text-indent: 24px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act .icon-yhm { background: url(../html/imgs/q.png) no-repeat scroll 6px -120px transparent; text-indent: 24px; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act .mima {
-  background: url(../html/imgs/q.png) no-repeat scroll 6px -160px transparent;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act .mima { background: url(../html/imgs/q.png) no-repeat scroll 6px -160px transparent; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act label {
-  margin-left: 5px;
-  margin-right: 15px;
-  vertical-align: middle;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act label { margin-left: 5px; margin-right: 15px; vertical-align: middle; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act a {
-  margin-left: 3px;
-  margin-right: 3px;
-  text-decoration: none;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item .form-act a { margin-left: 3px; margin-right: 3px; text-decoration: none; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item-normal {
-  overflow: hidden;
-  font-size: 13px;
-  margin-bottom: 10px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item-normal { overflow: hidden; font-size: 13px; margin-bottom: 10px; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item-normal .form-act {
-  position: relative;
-  display: block;
-  line-height: 2.5em;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item-normal .form-act { position: relative; display: block; line-height: 2.5em; }
 
-.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item-normal .form-act .btn {
-  display: block;
-  width: 100%;
-  background: none repeat scroll 0% 0% #EC3E7D;
-  line-height: 40px;
-  color: #FFF;
-  font-size: 16px;
-  border: 0px none;
-  padding: 0px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox form ul .form-item-normal .form-act .btn { display: block; width: 100%; background: none repeat scroll 0% 0% #EC3E7D; line-height: 40px; color: #FFF; font-size: 16px; border: 0px none; padding: 0px; }
 
-.index-page .page .signin-page-wrap .signin .signupbox .other-login {
-  clear: both;
-  padding-top: 40px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox .other-login { clear: both; padding-top: 40px; }
 
-.index-page .page .signin-page-wrap .signin .signupbox .other-login p {
-  margin: 0px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox .other-login p { margin: 0px; }
 
-.index-page .page .signin-page-wrap .signin .signupbox .other-login ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: outside none none;
-}
+.index-page .page .signin-page-wrap .signin .signupbox .other-login ul { margin: 0px; padding: 0px; list-style: outside none none; }
 
-.index-page .page .signin-page-wrap .signin .signupbox .other-login ul li {
-  display: inline-block;
-  float: left;
-  width: 115px;
-  padding-top: 10px;
-  font-size: 12px;
-  list-style-type: none;
-  margin: 0px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox .other-login ul li { display: inline-block; float: left; width: 115px; padding-top: 10px; font-size: 12px; list-style-type: none; margin: 0px; }
 
-.index-page .page .signin-page-wrap .signin .signupbox .other-login ul li a {
-  margin-left: 3px;
-  margin-right: 3px;
-  text-decoration: none;
-  color: #3e3e3e;
-  margin: 0px;
-  padding: 0px;
-}
+.index-page .page .signin-page-wrap .signin .signupbox .other-login ul li a { margin-left: 3px; margin-right: 3px; text-decoration: none; color: #3e3e3e; margin: 0px; padding: 0px; }

@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="../css/fase-list.css">	
 		<link rel="stylesheet" href="../css/bootstrap.min.css">
 		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<!--<script src="../js/require.js" data-main="../js/index-jq.js"></script>-->
 		<script src="../js/jquery-3.1.1.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
 		<script src="../js/index-jq.js"></script>
@@ -943,93 +944,9 @@
 			</div>
 			<!--底部结束-->
 		</div>
-		<script type="text/javascript">
-			;
-			(function($) {
-				var num = 12; //每页显示的个数
-				var n = 0;
-				var m = -num;
-
-				function ajax(pageType) {
-					var oul = $(".garry-show").find("ul");
-					var ohtml = "";
-					$.ajax({
-						type: "get",
-						url: "data/tabulated_data.json",
-						dataType: "json",
-						success: function(data) {
-							$(oul).empty();
-							if (n < data.length && pageType == "next") { //上一页
-								n += num;
-								m += num;
-							} else if (m > 0 && pageType == "prev") { //下一页
-								n -= num;
-								m -= num;
-							} else if (pageType == "first") { //第一页
-								n = num;
-								m = 0;
-							} else if (pageType == "last") { //最后一页
-								n = data.length + (data.length % num) - 1;
-								m = data.length + (data.length % num) - 6;
-							}
-							$.each(data, function(i, values) {
-								if (i >= m && i < n) {
-//									ohtml += "<li>" + values['news'] + "</li>";
-									var $li = $('<li/>').addClass('clear').appendTo('.arrivalslist');
-									var $div1 = $('<div/>').addClass('formall').appendTo($li);
-									var $div2 = $('<div/>').addClass('formallcont').addClass('clear').appendTo($div1);
-									var $div3 = $('<div/>').addClass('arrivals-pic').addClass('clear').appendTo($div2);
-									var $dl = $('<dl/>').appendTo($div3).addClass('dl').addClass('clear');
-									//国家品牌
-									var $dd = $('<dd/>').appendTo($dl).addClass('dd').html(values.guojia);
-									//小图国旗
-									var $i = $('<i/>').addClass('icountry').appendTo($dd).html('<img src=' + values.guoqi +'/>');
-									//大图商品
-									var $a = $('<a/>').appendTo($div3).addClass('a').html('<img class="ccc" src=' + values.man_img +'/>');
-									//倒计时
-				//					var $p = $('<p/>').addClass('time').appendTo($li).html('<i class="icon-time"></i> 剩余 <span class="day"></span> 天 <span class="hour"></span> 时 <span class="minute"></span> 分<span class="second"></span>秒 ');
-									var $div_price = $('<div/>').addClass('sale-price ').addClass('clear').appendTo($div2);
-									//现价
-									var $div_pricesp1 = $('<span/>').addClass('price').html(values.current_price).appendTo($div_price);
-									//原价
-									var $div_pricesp2 = $('<span/>').html('<del>'+ values.original_price +'<del/>').appendTo($div_price);
-									//折扣
-									var $div_pricesp3 = $('<span/>').addClass('count').html(values.discount).appendTo($div_price);
-									var $div_info= $('<div/>').addClass('arrivals-info').addClass('clear').appendTo($div2);
-									var $div_info1= $('<div/>').addClass('infoconts').addClass('clear').appendTo($div_info);
-									//保税仓直送
-									var $div_info1_01 = $('<div/>').addClass('des02 ').addClass('clear').appendTo($div_info1).html('<b class="yew">'+ values.direct_sending +'</b><a>' + values.zimu +'</a>');
-									//产品名字，系列
-									var $p_info_01 = $('<p/>').addClass('des03').appendTo($div_info1).html('<a>'+values.name +'</a>');
-									//数量
-									var $p_info_02 = $('<p/>').appendTo($div_info1).html('<a>'+values.count +'</a>');
-									//已售
-									var $p_info1= $('<p/>').addClass('salenum').addClass('clear').appendTo($div_info).html(values.Sold_Out);
-			                        //添加购物车
-			                        var $sp = $('<div/>').html('<button class="btngw">' + values.tianjia +'</button>').appendTo($div2).addClass('sp');
-								}
-							});
-//							$(".box").find("ul").html(ohtml);
-						}
-					});
-				};
-				$(".next").click(function() {
-					ajax("next");
-				});
-				$(".prev").click(function() {
-					ajax("prev");
-				});
-				$(".first").click(function() {
-					ajax("first");
-				});
-				$(".last").click(function() {
-					ajax("last");
-				});
-				$(function() { //初始化
-					ajax("next");
-				});
-			}(jQuery));
-		</script>
+		<!--<script type="text/javascript">
+			
+		</script>-->
 	</body>
 
 </html>

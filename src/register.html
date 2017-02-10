@@ -9,28 +9,29 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/jquery.idcode.css"><!--验证码-->
+		<!--<script src="js/require.js" data-main="js/index-jq.js"></script>-->
 		<script src="js/jquery-3.1.1.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/index-jq.js"></script>
 		<script src="js/jquery.idcode.js"></script><!--验证码-->
 		<script src="js/register.js"></script>
 		<script type="text/javascript">
-		$(function() {
-			$('#submit').click(function() {
-				$.post('register.php', {
-					email: $('#email').val(),
-					password: $('#password').val(),
-					phone: $('#phone').val()
-				}, function(response) {//response返回的是php函数的结果集，是一个字符串
-					var $obj = eval('(' + response + ')');
-					if ($obj.state) {
-						alert('注册成功！');
-					} else {
-						alert($obj.message);
-					}
+			$(function() {
+				$('#submit').click(function() {
+					$.post('register.php', {
+						email: $('#email').val(),
+						password: $('#password').val(),
+						phone: $('#phone').val()
+					}, function(response) {//response返回的是php函数的结果集，是一个字符串
+						var $obj = eval('(' + response + ')');
+						if ($obj.state) {
+							alert('注册成功！');
+						} else {
+							alert($obj.message);
+						}
+					});
 				});
 			});
-		});
 		</script>
 	</head>
 
