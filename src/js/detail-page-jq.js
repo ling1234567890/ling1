@@ -1,5 +1,5 @@
-//define(['config'], function() {
-//	requirejs(['jquery-3.1.1', 'index-jq', 'bootstrap.min','detail-page-jq','jquery.gdszoom'], function($, i, b ,d,j) {
+define(['config'], function() {
+	requirejs(['jquery', 'index', 'bootstrap.min','detail-page-jq','jquery.gdszoom'], function($, i, b ,d,j) {
 			
 			//滚动条事件 顶部悬浮
 			$(function() {
@@ -21,9 +21,11 @@
 						});
 						$("#xuanting").removeClass('ss');
 					}
-				})
+				});
+				//放大镜
+				$('.product-pic').gdszoom();
 			});
 		
 		
-//	});
-//});
+	});
+});

@@ -1,5 +1,5 @@
-//define(['config'], function() {
-//	requirejs(['jquery-3.1.1', 'index-jq', 'bootstrap.min','jquery.cookie','fase-list-jq'], function($,i,b,j,f) {
+define(['config'], function() {
+	requirejs(['jquery', 'index', 'bootstrap.min','jquery.cookie','fase-list-jq'], function($,i,b,j,f) {
 		$(function() {
 
 			//产品分类点击效果
@@ -107,8 +107,8 @@
 			};
 			effect_show();
 			
-			;
-			(function($) {
+			
+			;(function($) {
 				var num = 12; //每页显示的个数
 				var n = 0;
 				var m = -num;
@@ -121,7 +121,7 @@
 						url: "data/tabulated_data.json",
 						dataType: "json",
 						success: function(data) {
-							$(oul).empty();
+							$(oul).empty();//empty(); 清空内容
 							if (n < data.length && pageType == "next") { //上一页
 								n += num;
 								m += num;
@@ -175,9 +175,9 @@
 
 							//点击添加到购物车
 							$('.arrivalslist').on('click','.btngw',function(e){
-									console.log(111)	
+										
 								 var title1 = $(e.target).parent().parent().children(".arrivals-info").children(".infoconts").find('.des03').html();//产品名称
-							
+							console.log(title1)
 								 //price
 								 var price =$(e.target).parent().parent().children(".sale-price ").find('.price').html();//产品价格
 						//					     console.log(price);
@@ -191,8 +191,6 @@
 						//					
 								var  bGood = false;  //代表没有信息
 								if(strCookie == undefined || strCookie =="" || strCookie.length==0){
-						                 
-									
 									var oCookie = [];
 									var newGood = {"title1":title1,data:obj,num:1}//新的完整的产品信息
 									oCookie.push(newGood);
@@ -200,18 +198,13 @@
 								}else{
 									 //有另外的产品信息，不是要添加的产品信息，所有要生成所添加的产品信息
 									var oCookie = JSON.parse(strCookie);
-								    
-									
 									$.each(oCookie,function(){
-										
 										if(this.title1 ==title1){
 											var num = parseInt(this.num)+1;  
 											this.num = num;
 											bGood =true  ;  //表示产品有信息
 										}
-									})
-								
-									
+									});
 									if(bGood==false){
 										//生成新的商品信息
 										var newGood = {"title1":title1,data:obj,num:1}//新的完整的产品信息
@@ -228,7 +221,7 @@
 								console.log($.cookie("good") );
 								
 								
-							})
+							});
 						}
 					});
 				};
@@ -250,5 +243,5 @@
 			}(jQuery));
 		});
 
-//	});
-//});
+	});
+});

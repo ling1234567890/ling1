@@ -4,31 +4,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>登录页面</title>
-		<link rel="stylesheet" href="css/homepage.css">	
-		<link rel="stylesheet" href="css/login.css">	
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<script src="js/jquery-3.1.1.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/index-jq.js"></script>
-		<script src="js/register.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('#btn').click(function() {
-					$.post('login.php', {
-						email: $('#email').val(),
-						password: $('#password').val()
-					}, function(response) {
-						var $obj = eval('(' + response + ')');
-						if ($obj.state) {
-							window.location.href = 'index.html';
-						} else {
-							alert($obj.message);
-						}
-					})
-				})
-			})
-		</script>
+		<link rel="stylesheet" href="../css/homepage.css">	
+		<link rel="stylesheet" href="../css/login.css">	
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<script src="../js/require.js" data-main="../js/login.js"></script>
+		<!--<script src="../js/jquery-3.1.1.js"></script>-->
+		<!--<script src="../js/bootstrap.min.js"></script>-->
+		<!--<script src="../js/index-jq.js"></script>-->
+		<!--<script src="../js/register.js"></script>-->
 	</head>
 
 	<body>
@@ -100,10 +84,10 @@
 								<div class="member_attention">
 									<a rel="nofollow" href="#" class="white">
 										关于我们
-										<img src="img/heade-wb.png"  alt="沙沙微博" id="sha_wb"/>
-										<img src="img/heade-wx.png" alt="沙沙微信" id="sha_wx"/>
-										<div class="heade-wb"><img src="img/heade_wb.jpg" /> </div>
-										<div class="heade-wx"><img src="img/heade-wx.jpg" /> </div>
+										<img src="../img/heade-wb.png"  alt="沙沙微博" id="sha_wb"/>
+										<img src="../img/heade-wx.png" alt="沙沙微信" id="sha_wx"/>
+										<div class="heade-wb"><img src="../img/heade_wb.jpg" /> </div>
+										<div class="heade-wx"><img src="../img/heade-wx.jpg" /> </div>
 									</a>
 								</div>
 							</li>
@@ -117,7 +101,7 @@
 			<div class="header-main">
 				<div class="page-rs clear"><br />
 					<!--logo-->
-					<div class="logo"><a href="#"><img src="img/logo.png" /> </a> </div>
+					<div class="logo"><a href="#"><img src="../img/logo.png" /> </a> </div>
 				</div>
 			</div>
 			<!--logo结束-->
@@ -166,9 +150,9 @@
 				      		<div class="other-login">
 				      			<p>第三方账号登录</p>
 				      			<ul>
-				      				<li><a href=""><img src="html/imgs/login01.jpg">QQ登录</a></li>
-				      				<li><a href=""><img src="html/imgs/login02.jpg">微博登录</a></li>
-				      				<li><a href=""><img src="html/imgs/login03.jpg">支付宝登录</a></li>
+				      				<li><a href=""><img src="../html/imgs/login01.jpg">QQ登录</a></li>
+				      				<li><a href=""><img src="../html/imgs/login02.jpg">微博登录</a></li>
+				      				<li><a href=""><img src="../html/imgs/login03.jpg">支付宝登录</a></li>
 				      			</ul>
 				      		</div>
 				      	</div>
